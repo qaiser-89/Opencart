@@ -27,11 +27,10 @@ public class RegisterNewUserTest extends BaseClass
     {
         RegisterPage register=new RegisterPage(driver);
         register.registerNewUser();
-        String expected_message = "Congratulations! Your new account has been successfully created!";
+        String expected_message = "Your Account Has Been Created!";
+        Assert.assertEquals("Your Account Has Been Created!", expected_message);
         Assert.assertTrue(register.verifySuccessMessShows());
     }
-
-
     @Test(priority = 3)
     public void verifyAccountCreatedText()
     {
@@ -66,7 +65,19 @@ public class RegisterNewUserTest extends BaseClass
         SuccessfullPage succ=new SuccessfullPage(driver);
         Assert.assertEquals(succ.verifySuccessMessLine5(), String5);
     }
+    @Test(priority = 8)
+    public void checkContinueButtonDisplays()
+    {
+        SuccessfullPage succ=new SuccessfullPage(driver);
+        Assert.assertTrue(succ.verfiyContinueButtonDisplays());
+    }
 
+    @Test(priority = 9)
+    public void clickOnContinueButton()
+    {
+        SuccessfullPage succ=new SuccessfullPage(driver);
+        succ.clickContinueButton();
+    }
 
 
 

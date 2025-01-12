@@ -57,4 +57,9 @@ public class SuccessfullPage  extends BaseClass
        return continue_button_status;
     }
 
+    public void clickContinueButton()
+    {
+        Utility.waitForElement(driver, continue_button).click();
+    }
+
 }
