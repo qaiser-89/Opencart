@@ -26,7 +26,7 @@ public class RegisterPage
     protected By first_name_error_message = By.xpath("//div[contains(text(),'First Name must be')]");
     protected By last_name_error_message = By.xpath("//div[contains(text(),'Last Name must be')]");
     protected By email_error_message = By.xpath("//div[contains(text(),'E-Mail Address does not ')]");
-    protected By telephone_error_message = By.xpath("//div[contains(text(),'Telephone must be')]')]");
+    protected By telephone_error_message = By.xpath("//div[contains(text(),'Telephone must be')]");
     protected By password_error_message = By.xpath("//div[contains(text(),'Password must be between')]");
 
 public void registerNewUser()
