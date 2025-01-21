@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="/Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/src/main/java/Tests/RegisterNewUserTest.java"><classes><class name="Tests.RegisterNewUserTest"><methods><include name="navigateToNewUserPage"/><include name="registerNewUser"/><include name="verifyAccountCreatedText"/><include name="verifyCongratulationsText"/><include name="verifyAdvantageText"/><include name="verifyAnyQuestionText"/><include name="verifyConfermationHasBeenSentText"/><include name="checkContinueButtonDisplays"/><include name="clickOnContinueButton"/></methods></class></classes></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/src/main/java/Tests/RegisterNewUserTest.java">
+        <classes><class name="Tests.RegisterNewUserTest"><methods><include name="navigateToNewUserPage"/><include name="registerNewUser"/><include name="verifyAccountCreatedText"/><include name="verifyCongratulationsText"/><include name="verifyAdvantageText"/><include name="verifyAnyQuestionText"/><include name="verifyConfermationHasBeenSentText"/><include name="checkContinueButtonDisplays"/><include name="clickOnContinueButton"/></methods></class></classes>
+    </test></suite>
