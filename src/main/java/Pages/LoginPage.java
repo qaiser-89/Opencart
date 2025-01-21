@@ -13,7 +13,9 @@ public class LoginPage
     }
 
     protected By email_field = By.xpath("//input[@id='input-email']");
+    protected By email_field_error = By.xpath("//div[contains(text(),'Warning: No match')]");
     protected By password_field = By.xpath("//input[@id='input-password']");
+    protected By password_field_error = By.xpath("//div[contains(text(),'Warning: No match')]");
     protected By login_button = By.xpath("//input[@value='Login']");
 
     public void ValidLoginWithCorrectDetails(String user, String pass)
@@ -22,4 +24,18 @@ public class LoginPage
         Utility.waitForElement(driver, password_field).sendKeys(pass);
         Utility.waitForElement(driver, login_button).click();
     }
+
+    public String clickEmailField()
+    {
+        Utility.waitForElement(driver, login_button).click();
+        String emailerror= Utility.waitForElement(driver, email_field_error).getText();
+        return emailerror;
+    }
+
+     public String clickPasswordField()
+{
+    Utility.waitForElement(driver, login_button).click();
+    String passworderror=Utility.waitForElement(driver, password_field_error).getText();
+    return passworderror;
+}
 }
