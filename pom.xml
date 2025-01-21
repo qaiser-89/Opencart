@@ -58,6 +58,8 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>XMLFiles/testng.xml</suiteXmlFile>
+                        <suiteXmlFile>XMLFiles/testng Login Test.xml</suiteXmlFile>
+                        <suiteXmlFiles>XMLFiles/RegisterNewUserPageFields.xml</suiteXmlFiles>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
