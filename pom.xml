@@ -65,9 +65,8 @@
                 <version>3.5.2</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>XMLFiles/testng.xml</suiteXmlFile>
-                        <suiteXmlFile>XMLFiles/testng Login Test.xml</suiteXmlFile>
-                        <suiteXmlFiles>XMLFiles/RegisterNewUserPageFields.xml</suiteXmlFiles>
+                        <suiteXmlFile>XMLFiles/SmokeTests.xml</suiteXmlFile>
+
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

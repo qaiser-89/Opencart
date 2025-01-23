@@ -9,3 +9,4 @@ Tests/RegisterNewUserPageFieldCheck.class
 com/factory/BrowserFactory.class
 Pages/RegisterPage.class
 com/dataProvider/DataReader.class
+Tests/LoginPageFieldsCheck.class
