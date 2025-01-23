@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/src/main/java/Tests/RegisterNewUserTest.java">
+        <classes>
+            <class name="Tests.LoginTest"/>
+            <class name="Tests.LoginPageFieldsCheck"/>
+            <class name="Tests.RegisterNewUserTest"/>
+            <class name="Tests.RegisterNewUserPageFieldCheck">
+            </class>
+        </classes>
+    </test></suite>
