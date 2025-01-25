@@ -3,9 +3,13 @@ package com.factory;
 import com.dataProvider.DataReader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.testng.Reporter;
+
+import javax.xml.crypto.Data;
 import java.time.Duration;
 
 public class BrowserFactory
@@ -21,6 +25,14 @@ public class BrowserFactory
     {
         if(driverName.equalsIgnoreCase("Chrome")|| driverName.equalsIgnoreCase("Google Chrome"))
         {
+            ChromeOptions options=new ChromeOptions();
+
+            if(DataReader.readProperty("Headless").equalsIgnoreCase("True"))
+            {
+                options.addArguments("--headless=new");
+                Reporter.log("Chrome is running in Headless Mode!!, you can change the setting in Config file", true);
+            }
+
             driver =new ChromeDriver();
         } else if (driverName.equalsIgnoreCase("Firefox")|| driverName.equalsIgnoreCase("Mozila Firefox")) {
             driver = new FirefoxDriver();
@@ -37,7 +49,7 @@ public class BrowserFactory
         }
         driver.manage().window().maximize();
         driver.get((URL));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         return driver;
     }
 
