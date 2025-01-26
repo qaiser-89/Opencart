@@ -17,6 +17,15 @@ public class LoginPage
     protected By password_field = By.xpath("//input[@id='input-password']");
     protected By password_field_error = By.xpath("//div[contains(text(),'Warning: No match')]");
     protected By login_button = By.xpath("//input[@value='Login']");
+    protected By register_user_from_left = By.xpath("//a[normalize-space()='Continue']");
+    protected By register_from_right_list = By.xpath("//a[@class='list-group-item'][normalize-space()='Register']");
+
+    public boolean accessRegisterFromDifferentWays()
+    {
+        Utility.waitForElement(driver, register_user_from_left).click();
+        Utility.waitForElement(driver, register_from_right_list).click();
+        return true;
+    }
 
     public void ValidLoginWithCorrectDetails(String user, String pass)
     {

@@ -1,5 +1,6 @@
 package Tests;
 import Pages.HomePage;
+import Pages.LoginPage;
 import Pages.RegisterPage;
 import Pages.SuccessfullPage;
 import com.Base.BaseClass;
@@ -14,6 +15,16 @@ public class RegisterNewUserTest extends BaseClass
     String String3="You can now take advantage of member privileges to enhance your online shopping experience with us.";
     String String4="If you have ANY questions about the operation of this online shop, please e-mail the store owner.";
     String String5="A confirmation has been sent to the provided e-mail address. If you have not received it within the hour, please contact us.";
+
+
+    @Test(priority = 0)
+    public void newUserPageNavigationByDifferentWays()
+    {
+        HomePage home=new HomePage(driver);
+        LoginPage login=new LoginPage(driver);
+        home.navidateToNewUserPage();
+        login.accessRegisterFromDifferentWays();
+    }
 
     @Test(priority = 1)
     public void navigateToNewUserPage()
