@@ -20,6 +20,8 @@ public class RegisterPage
     protected By password = By.xpath("//input[@id='input-password']");
     protected By confirm_password = By.xpath("//input[@id='input-confirm']");
     protected By accept_policy = By.xpath("//input[@name='agree']");
+    protected By newletter_yes_radio = By.xpath("//label[normalize-space()='Yes']");
+
     protected By continue_button = By.xpath("//input[@value='Continue']");
     protected By successful_registration_message = By.xpath("//p[contains(text(),'Congratulations! Your new account has been success')]");
 
@@ -42,6 +44,7 @@ public void registerNewUser()
     Utility.waitForElement(driver, password).sendKeys("Test@123");
     Utility.waitForElement(driver, confirm_password).sendKeys("Test@123");
     Utility.waitForElement(driver, accept_policy).click();
+    Utility.waitForElement(driver, newletter_yes_radio).click();
     Utility.waitForElement(driver, continue_button).click();
 }
 

@@ -58,7 +58,8 @@ public class Utility
 
     }
     
-    public static WebElement waitForElement(WebDriver driver, By locator, int timeinseconds)  {
+    public static WebElement waitForElement(WebDriver driver, By locator, int timeinseconds)
+    {
         WebDriverWait wait=new WebDriverWait( driver, Duration.ofSeconds(timeinseconds));
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
         String highLightcondition= DataReader.readProperty("HighLighter");
@@ -69,6 +70,8 @@ public class Utility
         return element;
 
     }
+
+
 
 
 
