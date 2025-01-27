@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>22/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 23 23:25:17 GMT 2025</td>
+<td>Started on:</td><td>Mon Jan 27 21:08:18 GMT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>36 seconds (36707 ms)</td>
+<tr><td>Total time:</td><td>33 seconds (33160 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,227 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='Tests.RegisterNewUserTest.driverTearDown()'><b>driverTearDown</b><br>Test class: Tests.RegisterNewUserTest<br/>
-<a href="#Output-286658790" onClick='toggleBox("Output-286658790", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-286658790" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-286658790">
-Log: INFO Closing driver<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.7.2&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [d09e9d22-798a-4808-85e2-3422cc17ea7a, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 134.0.2, moz:accessibilityChecks: false, moz:buildID: 20250120135430, moz:debuggerAddress: 127.0.0.1:12957, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 22.6.0, moz:processID: 6997, moz:profile: /var/folders/nm/dwtw1bdd5cz..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:12957/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
-Session ID: d09e9d22-798a-4808-85e2-3422cc17ea7a
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:126)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1812)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-</pre></div><a href='#' onClick='toggleBox("stack-trace286658790", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace286658790'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.7.2&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [d09e9d22-798a-4808-85e2-3422cc17ea7a, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 134.0.2, moz:accessibilityChecks: false, moz:buildID: 20250120135430, moz:debuggerAddress: 127.0.0.1:12957, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 22.6.0, moz:processID: 6997, moz:profile: /var/folders/nm/dwtw1bdd5cz..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:12957/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
-Session ID: d09e9d22-798a-4808-85e2-3422cc17ea7a
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:126)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1812)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-</pre></div></td>
-<td>0</td>
-<td>Tests.RegisterNewUserTest@4cc451f2</td></tr>
-<tr>
-<td title='Tests.LoginPageFieldsCheck.driverTearDown()'><b>driverTearDown</b><br>Test class: Tests.LoginPageFieldsCheck<br/>
-<a href="#Output-2125470482" onClick='toggleBox("Output-2125470482", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2125470482" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2125470482">
-Log: INFO Closing driver<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.7.2&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [7883b2b7-9a26-4943-95e2-fc0a01dc4b9a, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 134.0.2, moz:accessibilityChecks: false, moz:buildID: 20250120135430, moz:debuggerAddress: 127.0.0.1:40662, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 22.6.0, moz:processID: 6955, moz:profile: /var/folders/nm/dwtw1bdd5cz..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:40662/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
-Session ID: 7883b2b7-9a26-4943-95e2-fc0a01dc4b9a
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:126)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1812)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2125470482", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2125470482'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.7.2&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [7883b2b7-9a26-4943-95e2-fc0a01dc4b9a, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 134.0.2, moz:accessibilityChecks: false, moz:buildID: 20250120135430, moz:debuggerAddress: 127.0.0.1:40662, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 22.6.0, moz:processID: 6955, moz:profile: /var/folders/nm/dwtw1bdd5cz..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:40662/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
-Session ID: 7883b2b7-9a26-4943-95e2-fc0a01dc4b9a
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:126)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1812)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-</pre></div></td>
-<td>0</td>
-<td>Tests.LoginPageFieldsCheck@4a94ee4</td></tr>
-<tr>
-<td title='Tests.LoginTest.driverTearDown()'><b>driverTearDown</b><br>Test class: Tests.LoginTest<br/>
-<a href="#Output-1871680329" onClick='toggleBox("Output-1871680329", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1871680329" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1871680329">
-Log: INFO Closing driver<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.7.2&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [73b553f9-a2c7-49ac-8629-986670683e1d, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 134.0.2, moz:accessibilityChecks: false, moz:buildID: 20250120135430, moz:debuggerAddress: 127.0.0.1:8609, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 22.6.0, moz:processID: 6917, moz:profile: /var/folders/nm/dwtw1bdd5cz..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:8609/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
-Session ID: 73b553f9-a2c7-49ac-8629-986670683e1d
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:126)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1812)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1871680329", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1871680329'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.7.2&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [73b553f9-a2c7-49ac-8629-986670683e1d, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 134.0.2, moz:accessibilityChecks: false, moz:buildID: 20250120135430, moz:debuggerAddress: 127.0.0.1:8609, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 22.6.0, moz:processID: 6917, moz:profile: /var/folders/nm/dwtw1bdd5cz..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:8609/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
-Session ID: 73b553f9-a2c7-49ac-8629-986670683e1d
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:126)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1812)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-</pre></div></td>
-<td>0</td>
-<td>Tests.LoginTest@6b927fb</td></tr>
-<tr>
-<td title='Tests.RegisterNewUserPageFieldCheck.driverTearDown()'><b>driverTearDown</b><br>Test class: Tests.RegisterNewUserPageFieldCheck<br/>
-<a href="#Output-1798861270" onClick='toggleBox("Output-1798861270", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1798861270" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1798861270">
-Log: INFO Closing driver<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.7.2&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [e20d1305-7f4e-42d9-bee5-f34246834abf, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 134.0.2, moz:accessibilityChecks: false, moz:buildID: 20250120135430, moz:debuggerAddress: 127.0.0.1:37683, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 22.6.0, moz:processID: 7039, moz:profile: /var/folders/nm/dwtw1bdd5cz..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:37683/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
-Session ID: e20d1305-7f4e-42d9-bee5-f34246834abf
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:126)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1812)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1798861270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1798861270'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.7.2&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [e20d1305-7f4e-42d9-bee5-f34246834abf, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 134.0.2, moz:accessibilityChecks: false, moz:buildID: 20250120135430, moz:debuggerAddress: 127.0.0.1:37683, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 22.6.0, moz:processID: 7039, moz:profile: /var/folders/nm/dwtw1bdd5cz..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:37683/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
-Session ID: e20d1305-7f4e-42d9-bee5-f34246834abf
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:126)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1812)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-</pre></div></td>
-<td>0</td>
-<td>Tests.RegisterNewUserPageFieldCheck@6379eb</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -297,118 +76,26 @@ Session ID: e20d1305-7f4e-42d9-bee5-f34246834abf
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.RegisterNewUserTest.registerNewUser()'><b>registerNewUser</b><br>Test class: Tests.RegisterNewUserTest<br/>
-<a href="#Output-2074492901" onClick='toggleBox("Output-2074492901", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2074492901" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2074492901">
-Log INFO: Email Generated is-------test23_25_41_01_2025@eamil.com<br/>
-</div>
-</td>
+<td title='Tests.RegisterNewUserTest.newUserPageNavigationByDifferentWays()'><b>newUserPageNavigationByDifferentWays</b><br>Test class: Tests.RegisterNewUserTest</td>
 <td></td>
 <td>1</td>
-<td>Tests.RegisterNewUserTest@4cc451f2</td></tr>
-<tr>
-<td title='Tests.LoginPageFieldsCheck.checkPasswordFieldError()'><b>checkPasswordFieldError</b><br>Test class: Tests.LoginPageFieldsCheck</td>
-<td></td>
-<td>0</td>
-<td>Tests.LoginPageFieldsCheck@4a94ee4</td></tr>
-<tr>
-<td title='Tests.LoginPageFieldsCheck.navigateToLogin()'><b>navigateToLogin</b><br>Test class: Tests.LoginPageFieldsCheck</td>
-<td></td>
-<td>0</td>
-<td>Tests.LoginPageFieldsCheck@4a94ee4</td></tr>
-<tr>
-<td title='Tests.RegisterNewUserTest.verifyCongratulationsText()'><b>verifyCongratulationsText</b><br>Test class: Tests.RegisterNewUserTest</td>
-<td></td>
-<td>0</td>
-<td>Tests.RegisterNewUserTest@4cc451f2</td></tr>
-<tr>
-<td title='Tests.RegisterNewUserTest.verifyAdvantageText()'><b>verifyAdvantageText</b><br>Test class: Tests.RegisterNewUserTest</td>
-<td></td>
-<td>0</td>
-<td>Tests.RegisterNewUserTest@4cc451f2</td></tr>
-<tr>
-<td title='Tests.RegisterNewUserTest.clickOnContinueButton()'><b>clickOnContinueButton</b><br>Test class: Tests.RegisterNewUserTest</td>
-<td></td>
-<td>0</td>
-<td>Tests.RegisterNewUserTest@4cc451f2</td></tr>
-<tr>
-<td title='Tests.RegisterNewUserPageFieldCheck.verifyPasswordError()'><b>verifyPasswordError</b><br>Test class: Tests.RegisterNewUserPageFieldCheck</td>
-<td></td>
-<td>0</td>
-<td>Tests.RegisterNewUserPageFieldCheck@6379eb</td></tr>
-<tr>
-<td title='Tests.RegisterNewUserTest.verifyAnyQuestionText()'><b>verifyAnyQuestionText</b><br>Test class: Tests.RegisterNewUserTest</td>
-<td></td>
-<td>0</td>
-<td>Tests.RegisterNewUserTest@4cc451f2</td></tr>
+<td>Tests.RegisterNewUserTest@57bc27f5</td></tr>
 <tr>
 <td title='Tests.RegisterNewUserTest.checkContinueButtonDisplays()'><b>checkContinueButtonDisplays</b><br>Test class: Tests.RegisterNewUserTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.RegisterNewUserTest@4cc451f2</td></tr>
+<td>Tests.RegisterNewUserTest@57bc27f5</td></tr>
 <tr>
-<td title='Tests.RegisterNewUserPageFieldCheck.verifyLNameError()'><b>verifyLNameError</b><br>Test class: Tests.RegisterNewUserPageFieldCheck</td>
+<td title='Tests.RegisterNewUserTest.clickOnContinueButton()'><b>clickOnContinueButton</b><br>Test class: Tests.RegisterNewUserTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.RegisterNewUserPageFieldCheck@6379eb</td></tr>
-<tr>
-<td title='Tests.LoginPageFieldsCheck.checkEmailFieldError()'><b>checkEmailFieldError</b><br>Test class: Tests.LoginPageFieldsCheck</td>
-<td></td>
-<td>0</td>
-<td>Tests.LoginPageFieldsCheck@4a94ee4</td></tr>
-<tr>
-<td title='Tests.RegisterNewUserTest.navigateToNewUserPage()'><b>navigateToNewUserPage</b><br>Test class: Tests.RegisterNewUserTest</td>
-<td></td>
-<td>1</td>
-<td>Tests.RegisterNewUserTest@4cc451f2</td></tr>
-<tr>
-<td title='Tests.RegisterNewUserTest.verifyAccountCreatedText()'><b>verifyAccountCreatedText</b><br>Test class: Tests.RegisterNewUserTest</td>
-<td></td>
-<td>0</td>
-<td>Tests.RegisterNewUserTest@4cc451f2</td></tr>
-<tr>
-<td title='Tests.RegisterNewUserTest.verifyConfermationHasBeenSentText()'><b>verifyConfermationHasBeenSentText</b><br>Test class: Tests.RegisterNewUserTest</td>
-<td></td>
-<td>0</td>
-<td>Tests.RegisterNewUserTest@4cc451f2</td></tr>
-<tr>
-<td title='Tests.LoginTest.navigateToLogin()'><b>navigateToLogin</b><br>Test class: Tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>Tests.LoginTest@6b927fb</td></tr>
-<tr>
-<td title='Tests.RegisterNewUserPageFieldCheck.navigateToNewUserPage()'><b>navigateToNewUserPage</b><br>Test class: Tests.RegisterNewUserPageFieldCheck</td>
-<td></td>
-<td>1</td>
-<td>Tests.RegisterNewUserPageFieldCheck@6379eb</td></tr>
-<tr>
-<td title='Tests.RegisterNewUserPageFieldCheck.verifyWarningError()'><b>verifyWarningError</b><br>Test class: Tests.RegisterNewUserPageFieldCheck</td>
-<td></td>
-<td>0</td>
-<td>Tests.RegisterNewUserPageFieldCheck@6379eb</td></tr>
-<tr>
-<td title='Tests.RegisterNewUserPageFieldCheck.verifyTelephoneError()'><b>verifyTelephoneError</b><br>Test class: Tests.RegisterNewUserPageFieldCheck</td>
-<td></td>
-<td>0</td>
-<td>Tests.RegisterNewUserPageFieldCheck@6379eb</td></tr>
-<tr>
-<td title='Tests.LoginTest.ValidLoginToApp()'><b>ValidLoginToApp</b><br>Test class: Tests.LoginTest</td>
-<td></td>
-<td>1</td>
-<td>Tests.LoginTest@6b927fb</td></tr>
-<tr>
-<td title='Tests.RegisterNewUserPageFieldCheck.verifyEmailError()'><b>verifyEmailError</b><br>Test class: Tests.RegisterNewUserPageFieldCheck</td>
-<td></td>
-<td>0</td>
-<td>Tests.RegisterNewUserPageFieldCheck@6379eb</td></tr>
+<td>Tests.RegisterNewUserTest@57bc27f5</td></tr>
 <tr>
 <td title='Tests.LoginPageFieldsCheck.readListOnRightOfPage()'><b>readListOnRightOfPage</b><br>Test class: Tests.LoginPageFieldsCheck<br/>
-<a href="#Output-712423434" onClick='toggleBox("Output-712423434", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1045567253" onClick='toggleBox("Output-1045567253", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-712423434" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-712423434">
+<a href="#Output-1045567253" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1045567253">
 Login<br/>
 Register<br/>
 Forgotten Password<br/>
@@ -426,12 +113,104 @@ Newsletter<br/>
 </td>
 <td></td>
 <td>0</td>
-<td>Tests.LoginPageFieldsCheck@4a94ee4</td></tr>
+<td>Tests.LoginPageFieldsCheck@5c7933ad</td></tr>
+<tr>
+<td title='Tests.LoginPageFieldsCheck.checkEmailFieldError()'><b>checkEmailFieldError</b><br>Test class: Tests.LoginPageFieldsCheck</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginPageFieldsCheck@5c7933ad</td></tr>
+<tr>
+<td title='Tests.RegisterNewUserTest.verifyCongratulationsText()'><b>verifyCongratulationsText</b><br>Test class: Tests.RegisterNewUserTest</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterNewUserTest@57bc27f5</td></tr>
+<tr>
+<td title='Tests.RegisterNewUserTest.registerNewUser()'><b>registerNewUser</b><br>Test class: Tests.RegisterNewUserTest<br/>
+<a href="#Output-62915435" onClick='toggleBox("Output-62915435", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-62915435" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-62915435">
+Log INFO: Email Generated is-------test21_08_39_01_2025@eamil.com<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Tests.RegisterNewUserTest@57bc27f5</td></tr>
+<tr>
+<td title='Tests.LoginPageFieldsCheck.navigateToLogin()'><b>navigateToLogin</b><br>Test class: Tests.LoginPageFieldsCheck</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginPageFieldsCheck@5c7933ad</td></tr>
+<tr>
+<td title='Tests.RegisterNewUserPageFieldCheck.verifyWarningError()'><b>verifyWarningError</b><br>Test class: Tests.RegisterNewUserPageFieldCheck</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterNewUserPageFieldCheck@5fb759d6</td></tr>
+<tr>
+<td title='Tests.RegisterNewUserPageFieldCheck.verifyPasswordError()'><b>verifyPasswordError</b><br>Test class: Tests.RegisterNewUserPageFieldCheck</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterNewUserPageFieldCheck@5fb759d6</td></tr>
+<tr>
+<td title='Tests.LoginTest.navigateToLogin()'><b>navigateToLogin</b><br>Test class: Tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginTest@72c8e7b</td></tr>
+<tr>
+<td title='Tests.RegisterNewUserTest.verifyAccountCreatedText()'><b>verifyAccountCreatedText</b><br>Test class: Tests.RegisterNewUserTest</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterNewUserTest@57bc27f5</td></tr>
+<tr>
+<td title='Tests.RegisterNewUserTest.verifyAdvantageText()'><b>verifyAdvantageText</b><br>Test class: Tests.RegisterNewUserTest</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterNewUserTest@57bc27f5</td></tr>
+<tr>
+<td title='Tests.RegisterNewUserPageFieldCheck.verifyLNameError()'><b>verifyLNameError</b><br>Test class: Tests.RegisterNewUserPageFieldCheck</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterNewUserPageFieldCheck@5fb759d6</td></tr>
+<tr>
+<td title='Tests.RegisterNewUserPageFieldCheck.verifyEmailError()'><b>verifyEmailError</b><br>Test class: Tests.RegisterNewUserPageFieldCheck</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterNewUserPageFieldCheck@5fb759d6</td></tr>
+<tr>
+<td title='Tests.RegisterNewUserPageFieldCheck.navigateToNewUserPage()'><b>navigateToNewUserPage</b><br>Test class: Tests.RegisterNewUserPageFieldCheck</td>
+<td></td>
+<td>1</td>
+<td>Tests.RegisterNewUserPageFieldCheck@5fb759d6</td></tr>
+<tr>
+<td title='Tests.RegisterNewUserTest.verifyAnyQuestionText()'><b>verifyAnyQuestionText</b><br>Test class: Tests.RegisterNewUserTest</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterNewUserTest@57bc27f5</td></tr>
+<tr>
+<td title='Tests.RegisterNewUserPageFieldCheck.verifyTelephoneError()'><b>verifyTelephoneError</b><br>Test class: Tests.RegisterNewUserPageFieldCheck</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterNewUserPageFieldCheck@5fb759d6</td></tr>
+<tr>
+<td title='Tests.LoginPageFieldsCheck.checkPasswordFieldError()'><b>checkPasswordFieldError</b><br>Test class: Tests.LoginPageFieldsCheck</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginPageFieldsCheck@5c7933ad</td></tr>
+<tr>
+<td title='Tests.LoginTest.ValidLoginToApp()'><b>ValidLoginToApp</b><br>Test class: Tests.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>Tests.LoginTest@72c8e7b</td></tr>
+<tr>
+<td title='Tests.RegisterNewUserTest.verifyConfermationHasBeenSentText()'><b>verifyConfermationHasBeenSentText</b><br>Test class: Tests.RegisterNewUserTest</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterNewUserTest@57bc27f5</td></tr>
 <tr>
 <td title='Tests.RegisterNewUserPageFieldCheck.verifyFNameError()'><b>verifyFNameError</b><br>Test class: Tests.RegisterNewUserPageFieldCheck</td>
 <td></td>
 <td>0</td>
-<td>Tests.RegisterNewUserPageFieldCheck@6379eb</td></tr>
+<td>Tests.RegisterNewUserPageFieldCheck@5fb759d6</td></tr>
 </table><p>
 </body>
 </html>

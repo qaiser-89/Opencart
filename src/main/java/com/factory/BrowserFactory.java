@@ -16,7 +16,7 @@ public class BrowserFactory
 {
     public static WebDriver driver;
 
-    public static  WebDriver getDriver(WebDriver driver)
+    public static  WebDriver getDriver()
     {
         return driver;
     }

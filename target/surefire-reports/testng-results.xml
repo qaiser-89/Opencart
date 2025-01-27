@@ -1,108 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="22" passed="22" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Log: INFO Settingup driver]]>
     </line>
     <line>
+      <![CDATA[Chrome is running in Headless Mode!!, you can change the setting in Config file]]>
+    </line>
+    <line>
       <![CDATA[Log: INFO Closing driver]]>
     </line>
     <line>
       <![CDATA[Log: INFO Settingup driver]]>
     </line>
     <line>
-      <![CDATA[Log INFO: Email Generated is-------test23_26_41_01_2025@eamil.com]]>
+      <![CDATA[Chrome is running in Headless Mode!!, you can change the setting in Config file]]>
+    </line>
+    <line>
+      <![CDATA[Login]]>
+    </line>
+    <line>
+      <![CDATA[Register]]>
+    </line>
+    <line>
+      <![CDATA[Forgotten Password]]>
+    </line>
+    <line>
+      <![CDATA[My Account]]>
+    </line>
+    <line>
+      <![CDATA[Address Book]]>
+    </line>
+    <line>
+      <![CDATA[Wish List]]>
+    </line>
+    <line>
+      <![CDATA[Order History]]>
+    </line>
+    <line>
+      <![CDATA[Downloads]]>
+    </line>
+    <line>
+      <![CDATA[Recurring payments]]>
+    </line>
+    <line>
+      <![CDATA[Reward Points]]>
+    </line>
+    <line>
+      <![CDATA[Returns]]>
+    </line>
+    <line>
+      <![CDATA[Transactions]]>
+    </line>
+    <line>
+      <![CDATA[Newsletter]]>
+    </line>
+    <line>
+      <![CDATA[Log: INFO Closing driver]]>
+    </line>
+    <line>
+      <![CDATA[Log: INFO Settingup driver]]>
+    </line>
+    <line>
+      <![CDATA[Chrome is running in Headless Mode!!, you can change the setting in Config file]]>
+    </line>
+    <line>
+      <![CDATA[Log INFO: Email Generated is-------test21_08_39_01_2025@eamil.com]]>
+    </line>
+    <line>
+      <![CDATA[Log: INFO Closing driver]]>
+    </line>
+    <line>
+      <![CDATA[Log: INFO Settingup driver]]>
+    </line>
+    <line>
+      <![CDATA[Chrome is running in Headless Mode!!, you can change the setting in Config file]]>
     </line>
     <line>
       <![CDATA[Log: INFO Closing driver]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-01-23T23:26:24 GMT" name="All Test Suite" finished-at="2025-01-23T23:26:44 GMT" duration-ms="19607">
+  <suite started-at="2025-01-27T21:08:18 GMT" name="All Test Suite" finished-at="2025-01-27T21:08:51 GMT" duration-ms="33160">
     <groups>
     </groups>
-    <test started-at="2025-01-23T23:26:24 GMT" name="/Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/src/main/java/Tests/RegisterNewUserPageFieldCheck.java" finished-at="2025-01-23T23:26:44 GMT" duration-ms="19607">
+    <test started-at="2025-01-27T21:08:18 GMT" name="/Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/src/main/java/Tests/RegisterNewUserTest.java" finished-at="2025-01-27T21:08:51 GMT" duration-ms="33160">
       <class name="Tests.RegisterNewUserTest">
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:Tests.RegisterNewUserTest@359f7cdf]" started-at="2025-01-23T23:26:33 GMT" name="setDriver" finished-at="2025-01-23T23:26:39 GMT" duration-ms="5942" status="PASS">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:Tests.RegisterNewUserTest@57bc27f5]" started-at="2025-01-27T21:08:33 GMT" name="setDriver" finished-at="2025-01-27T21:08:37 GMT" duration-ms="3547" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Log: INFO Settingup driver]]>
             </line>
+            <line>
+              <![CDATA[Chrome is running in Headless Mode!!, you can change the setting in Config file]]>
+            </line>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="navigateToNewUserPage()[pri:1, instance:Tests.RegisterNewUserTest@359f7cdf]" started-at="2025-01-23T23:26:39 GMT" name="navigateToNewUserPage" finished-at="2025-01-23T23:26:41 GMT" duration-ms="1296" status="PASS">
+        <test-method signature="newUserPageNavigationByDifferentWays()[pri:1, instance:Tests.RegisterNewUserTest@57bc27f5]" started-at="2025-01-27T21:08:37 GMT" name="newUserPageNavigationByDifferentWays" finished-at="2025-01-27T21:08:38 GMT" duration-ms="1694" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToNewUserPage -->
-        <test-method signature="registerNewUser()[pri:2, instance:Tests.RegisterNewUserTest@359f7cdf]" started-at="2025-01-23T23:26:41 GMT" name="registerNewUser" finished-at="2025-01-23T23:26:42 GMT" duration-ms="1678" status="PASS">
+        </test-method> <!-- newUserPageNavigationByDifferentWays -->
+        <test-method signature="registerNewUser()[pri:2, instance:Tests.RegisterNewUserTest@57bc27f5]" started-at="2025-01-27T21:08:39 GMT" name="registerNewUser" finished-at="2025-01-27T21:08:40 GMT" duration-ms="1677" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Log INFO: Email Generated is-------test23_26_41_01_2025@eamil.com]]>
+              <![CDATA[Log INFO: Email Generated is-------test21_08_39_01_2025@eamil.com]]>
             </line>
           </reporter-output>
         </test-method> <!-- registerNewUser -->
-        <test-method signature="verifyAccountCreatedText()[pri:3, instance:Tests.RegisterNewUserTest@359f7cdf]" started-at="2025-01-23T23:26:42 GMT" name="verifyAccountCreatedText" finished-at="2025-01-23T23:26:42 GMT" duration-ms="30" status="PASS">
+        <test-method signature="verifyAccountCreatedText()[pri:3, instance:Tests.RegisterNewUserTest@57bc27f5]" started-at="2025-01-27T21:08:41 GMT" name="verifyAccountCreatedText" finished-at="2025-01-27T21:08:41 GMT" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAccountCreatedText -->
-        <test-method signature="verifyCongratulationsText()[pri:4, instance:Tests.RegisterNewUserTest@359f7cdf]" started-at="2025-01-23T23:26:42 GMT" name="verifyCongratulationsText" finished-at="2025-01-23T23:26:42 GMT" duration-ms="26" status="PASS">
+        <test-method signature="verifyCongratulationsText()[pri:4, instance:Tests.RegisterNewUserTest@57bc27f5]" started-at="2025-01-27T21:08:41 GMT" name="verifyCongratulationsText" finished-at="2025-01-27T21:08:41 GMT" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCongratulationsText -->
-        <test-method signature="verifyAdvantageText()[pri:5, instance:Tests.RegisterNewUserTest@359f7cdf]" started-at="2025-01-23T23:26:42 GMT" name="verifyAdvantageText" finished-at="2025-01-23T23:26:42 GMT" duration-ms="25" status="PASS">
+        <test-method signature="verifyAdvantageText()[pri:5, instance:Tests.RegisterNewUserTest@57bc27f5]" started-at="2025-01-27T21:08:41 GMT" name="verifyAdvantageText" finished-at="2025-01-27T21:08:41 GMT" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAdvantageText -->
-        <test-method signature="verifyAnyQuestionText()[pri:6, instance:Tests.RegisterNewUserTest@359f7cdf]" started-at="2025-01-23T23:26:42 GMT" name="verifyAnyQuestionText" finished-at="2025-01-23T23:26:42 GMT" duration-ms="25" status="PASS">
+        <test-method signature="verifyAnyQuestionText()[pri:6, instance:Tests.RegisterNewUserTest@57bc27f5]" started-at="2025-01-27T21:08:42 GMT" name="verifyAnyQuestionText" finished-at="2025-01-27T21:08:42 GMT" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAnyQuestionText -->
-        <test-method signature="verifyConfermationHasBeenSentText()[pri:7, instance:Tests.RegisterNewUserTest@359f7cdf]" started-at="2025-01-23T23:26:42 GMT" name="verifyConfermationHasBeenSentText" finished-at="2025-01-23T23:26:42 GMT" duration-ms="27" status="PASS">
+        <test-method signature="verifyConfermationHasBeenSentText()[pri:7, instance:Tests.RegisterNewUserTest@57bc27f5]" started-at="2025-01-27T21:08:42 GMT" name="verifyConfermationHasBeenSentText" finished-at="2025-01-27T21:08:42 GMT" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyConfermationHasBeenSentText -->
-        <test-method signature="checkContinueButtonDisplays()[pri:8, instance:Tests.RegisterNewUserTest@359f7cdf]" started-at="2025-01-23T23:26:42 GMT" name="checkContinueButtonDisplays" finished-at="2025-01-23T23:26:42 GMT" duration-ms="27" status="PASS">
+        <test-method signature="checkContinueButtonDisplays()[pri:8, instance:Tests.RegisterNewUserTest@57bc27f5]" started-at="2025-01-27T21:08:42 GMT" name="checkContinueButtonDisplays" finished-at="2025-01-27T21:08:42 GMT" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkContinueButtonDisplays -->
-        <test-method signature="clickOnContinueButton()[pri:9, instance:Tests.RegisterNewUserTest@359f7cdf]" started-at="2025-01-23T23:26:42 GMT" name="clickOnContinueButton" finished-at="2025-01-23T23:26:43 GMT" duration-ms="405" status="PASS">
+        <test-method signature="clickOnContinueButton()[pri:9, instance:Tests.RegisterNewUserTest@57bc27f5]" started-at="2025-01-27T21:08:43 GMT" name="clickOnContinueButton" finished-at="2025-01-27T21:08:43 GMT" duration-ms="356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnContinueButton -->
-        <test-method is-config="true" signature="driverTearDown()[pri:0, instance:Tests.RegisterNewUserTest@359f7cdf]" started-at="2025-01-23T23:26:43 GMT" name="driverTearDown" finished-at="2025-01-23T23:26:44 GMT" duration-ms="908" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '4.28.0', revision: 'ac342546e9'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7.2', java.version: '23.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [d8ababf7-d968-4fe7-9f7d-91e9adb03ca1, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 134.0.2, moz:accessibilityChecks: false, moz:buildID: 20250120135430, moz:debuggerAddress: 127.0.0.1:13383, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 22.6.0, moz:processID: 7162, moz:profile: /var/folders/nm/dwtw1bdd5cz..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:13383/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
-Session ID: d8ababf7-d968-4fe7-9f7d-91e9adb03ca1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: '4.28.0', revision: 'ac342546e9'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7.2', java.version: '23.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [d8ababf7-d968-4fe7-9f7d-91e9adb03ca1, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 134.0.2, moz:accessibilityChecks: false, moz:buildID: 20250120135430, moz:debuggerAddress: 127.0.0.1:13383, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 22.6.0, moz:processID: 7162, moz:profile: /var/folders/nm/dwtw1bdd5cz..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:13383/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
-Session ID: d8ababf7-d968-4fe7-9f7d-91e9adb03ca1
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:126)
-at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1812)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1575)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        <test-method is-config="true" signature="driverTearDown()[pri:0, instance:Tests.RegisterNewUserTest@57bc27f5]" started-at="2025-01-27T21:08:43 GMT" name="driverTearDown" finished-at="2025-01-27T21:08:44 GMT" duration-ms="180" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Log: INFO Closing driver]]>
@@ -110,57 +142,147 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           </reporter-output>
         </test-method> <!-- driverTearDown -->
       </class> <!-- Tests.RegisterNewUserTest -->
-      <class name="Tests.LoginTest">
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:Tests.LoginTest@694abbdc]" started-at="2025-01-23T23:26:24 GMT" name="setDriver" finished-at="2025-01-23T23:26:31 GMT" duration-ms="6542" status="PASS">
+      <class name="Tests.RegisterNewUserPageFieldCheck">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:Tests.RegisterNewUserPageFieldCheck@5fb759d6]" started-at="2025-01-27T21:08:44 GMT" name="setDriver" finished-at="2025-01-27T21:08:47 GMT" duration-ms="3512" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Log: INFO Settingup driver]]>
             </line>
+            <line>
+              <![CDATA[Chrome is running in Headless Mode!!, you can change the setting in Config file]]>
+            </line>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="navigateToLogin()[pri:0, instance:Tests.LoginTest@694abbdc]" started-at="2025-01-23T23:26:31 GMT" name="navigateToLogin" finished-at="2025-01-23T23:26:31 GMT" duration-ms="650" status="PASS">
+        <test-method signature="navigateToNewUserPage()[pri:1, instance:Tests.RegisterNewUserPageFieldCheck@5fb759d6]" started-at="2025-01-27T21:08:47 GMT" name="navigateToNewUserPage" finished-at="2025-01-27T21:08:48 GMT" duration-ms="1350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToNewUserPage -->
+        <test-method signature="verifyWarningError()[pri:2, instance:Tests.RegisterNewUserPageFieldCheck@5fb759d6]" started-at="2025-01-27T21:08:49 GMT" name="verifyWarningError" finished-at="2025-01-27T21:08:49 GMT" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWarningError -->
+        <test-method signature="verifyFNameError()[pri:3, instance:Tests.RegisterNewUserPageFieldCheck@5fb759d6]" started-at="2025-01-27T21:08:49 GMT" name="verifyFNameError" finished-at="2025-01-27T21:08:49 GMT" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFNameError -->
+        <test-method signature="verifyLNameError()[pri:4, instance:Tests.RegisterNewUserPageFieldCheck@5fb759d6]" started-at="2025-01-27T21:08:49 GMT" name="verifyLNameError" finished-at="2025-01-27T21:08:49 GMT" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLNameError -->
+        <test-method signature="verifyEmailError()[pri:5, instance:Tests.RegisterNewUserPageFieldCheck@5fb759d6]" started-at="2025-01-27T21:08:50 GMT" name="verifyEmailError" finished-at="2025-01-27T21:08:50 GMT" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailError -->
+        <test-method signature="verifyTelephoneError()[pri:6, instance:Tests.RegisterNewUserPageFieldCheck@5fb759d6]" started-at="2025-01-27T21:08:50 GMT" name="verifyTelephoneError" finished-at="2025-01-27T21:08:50 GMT" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTelephoneError -->
+        <test-method signature="verifyPasswordError()[pri:7, instance:Tests.RegisterNewUserPageFieldCheck@5fb759d6]" started-at="2025-01-27T21:08:50 GMT" name="verifyPasswordError" finished-at="2025-01-27T21:08:50 GMT" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPasswordError -->
+        <test-method is-config="true" signature="driverTearDown()[pri:0, instance:Tests.RegisterNewUserPageFieldCheck@5fb759d6]" started-at="2025-01-27T21:08:51 GMT" name="driverTearDown" finished-at="2025-01-27T21:08:51 GMT" duration-ms="168" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Log: INFO Closing driver]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- driverTearDown -->
+      </class> <!-- Tests.RegisterNewUserPageFieldCheck -->
+      <class name="Tests.LoginPageFieldsCheck">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:Tests.LoginPageFieldsCheck@5c7933ad]" started-at="2025-01-27T21:08:26 GMT" name="setDriver" finished-at="2025-01-27T21:08:29 GMT" duration-ms="3600" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Log: INFO Settingup driver]]>
+            </line>
+            <line>
+              <![CDATA[Chrome is running in Headless Mode!!, you can change the setting in Config file]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method signature="navigateToLogin()[pri:0, instance:Tests.LoginPageFieldsCheck@5c7933ad]" started-at="2025-01-27T21:08:29 GMT" name="navigateToLogin" finished-at="2025-01-27T21:08:30 GMT" duration-ms="635" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToLogin -->
-        <test-method signature="ValidLoginToApp()[pri:1, instance:Tests.LoginTest@694abbdc]" started-at="2025-01-23T23:26:31 GMT" name="ValidLoginToApp" finished-at="2025-01-23T23:26:32 GMT" duration-ms="1033" status="PASS">
+        <test-method signature="checkEmailFieldError()[pri:1, instance:Tests.LoginPageFieldsCheck@5c7933ad]" started-at="2025-01-27T21:08:31 GMT" name="checkEmailFieldError" finished-at="2025-01-27T21:08:31 GMT" duration-ms="896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkEmailFieldError -->
+        <test-method signature="checkPasswordFieldError()[pri:2, instance:Tests.LoginPageFieldsCheck@5c7933ad]" started-at="2025-01-27T21:08:32 GMT" name="checkPasswordFieldError" finished-at="2025-01-27T21:08:32 GMT" duration-ms="475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPasswordFieldError -->
+        <test-method signature="readListOnRightOfPage()[pri:3, instance:Tests.LoginPageFieldsCheck@5c7933ad]" started-at="2025-01-27T21:08:33 GMT" name="readListOnRightOfPage" finished-at="2025-01-27T21:08:33 GMT" duration-ms="122" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login]]>
+            </line>
+            <line>
+              <![CDATA[Register]]>
+            </line>
+            <line>
+              <![CDATA[Forgotten Password]]>
+            </line>
+            <line>
+              <![CDATA[My Account]]>
+            </line>
+            <line>
+              <![CDATA[Address Book]]>
+            </line>
+            <line>
+              <![CDATA[Wish List]]>
+            </line>
+            <line>
+              <![CDATA[Order History]]>
+            </line>
+            <line>
+              <![CDATA[Downloads]]>
+            </line>
+            <line>
+              <![CDATA[Recurring payments]]>
+            </line>
+            <line>
+              <![CDATA[Reward Points]]>
+            </line>
+            <line>
+              <![CDATA[Returns]]>
+            </line>
+            <line>
+              <![CDATA[Transactions]]>
+            </line>
+            <line>
+              <![CDATA[Newsletter]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- readListOnRightOfPage -->
+        <test-method is-config="true" signature="driverTearDown()[pri:0, instance:Tests.LoginPageFieldsCheck@5c7933ad]" started-at="2025-01-27T21:08:33 GMT" name="driverTearDown" finished-at="2025-01-27T21:08:33 GMT" duration-ms="178" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Log: INFO Closing driver]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- driverTearDown -->
+      </class> <!-- Tests.LoginPageFieldsCheck -->
+      <class name="Tests.LoginTest">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:Tests.LoginTest@72c8e7b]" started-at="2025-01-27T21:08:18 GMT" name="setDriver" finished-at="2025-01-27T21:08:23 GMT" duration-ms="4969" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Log: INFO Settingup driver]]>
+            </line>
+            <line>
+              <![CDATA[Chrome is running in Headless Mode!!, you can change the setting in Config file]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method signature="navigateToLogin()[pri:0, instance:Tests.LoginTest@72c8e7b]" started-at="2025-01-27T21:08:23 GMT" name="navigateToLogin" finished-at="2025-01-27T21:08:24 GMT" duration-ms="822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToLogin -->
+        <test-method signature="ValidLoginToApp()[pri:1, instance:Tests.LoginTest@72c8e7b]" started-at="2025-01-27T21:08:24 GMT" name="ValidLoginToApp" finished-at="2025-01-27T21:08:25 GMT" duration-ms="1410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidLoginToApp -->
-        <test-method is-config="true" signature="driverTearDown()[pri:0, instance:Tests.LoginTest@694abbdc]" started-at="2025-01-23T23:26:32 GMT" name="driverTearDown" finished-at="2025-01-23T23:26:33 GMT" duration-ms="938" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '4.28.0', revision: 'ac342546e9'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7.2', java.version: '23.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [41b069a6-e0c9-4c99-a763-339c73f5cb24, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 134.0.2, moz:accessibilityChecks: false, moz:buildID: 20250120135430, moz:debuggerAddress: 127.0.0.1:32977, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 22.6.0, moz:processID: 7123, moz:profile: /var/folders/nm/dwtw1bdd5cz..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:32977/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
-Session ID: 41b069a6-e0c9-4c99-a763-339c73f5cb24]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: '4.28.0', revision: 'ac342546e9'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7.2', java.version: '23.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [41b069a6-e0c9-4c99-a763-339c73f5cb24, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 134.0.2, moz:accessibilityChecks: false, moz:buildID: 20250120135430, moz:debuggerAddress: 127.0.0.1:32977, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 22.6.0, moz:processID: 7123, moz:profile: /var/folders/nm/dwtw1bdd5cz..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:32977/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
-Session ID: 41b069a6-e0c9-4c99-a763-339c73f5cb24
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:126)
-at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1812)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1575)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        <test-method is-config="true" signature="driverTearDown()[pri:0, instance:Tests.LoginTest@72c8e7b]" started-at="2025-01-27T21:08:26 GMT" name="driverTearDown" finished-at="2025-01-27T21:08:26 GMT" duration-ms="145" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Log: INFO Closing driver]]>
@@ -168,6 +290,6 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           </reporter-output>
         </test-method> <!-- driverTearDown -->
       </class> <!-- Tests.LoginTest -->
-    </test> <!-- /Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/src/main/java/Tests/RegisterNewUserPageFieldCheck.java -->
+    </test> <!-- /Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/src/main/java/Tests/RegisterNewUserTest.java -->
   </suite> <!-- All Test Suite -->
 </testng-results>
