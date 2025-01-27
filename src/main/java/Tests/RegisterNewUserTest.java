@@ -17,16 +17,18 @@ public class RegisterNewUserTest extends BaseClass
     String String5="A confirmation has been sent to the provided e-mail address. If you have not received it within the hour, please contact us.";
 
 
-    @Test(priority = 0)
+    @Test(priority = 1)
     public void newUserPageNavigationByDifferentWays()
     {
         HomePage home=new HomePage(driver);
         LoginPage login=new LoginPage(driver);
         home.navidateToNewUserPage();
         login.accessRegisterFromDifferentWays();
+
+
     }
 
-    @Test(priority = 1)
+    //@Test(priority = 1)
     public void navigateToNewUserPage()
     {
         HomePage home=new HomePage(driver);
