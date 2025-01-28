@@ -5,79 +5,70 @@
       <![CDATA[Log: INFO Settingup driver]]>
     </line>
     <line>
-      <![CDATA[Chrome is running in Headless Mode!!, you can change the setting in Config file]]>
-    </line>
-    <line>
       <![CDATA[Log: INFO Closing driver]]>
     </line>
     <line>
       <![CDATA[Log: INFO Settingup driver]]>
     </line>
     <line>
-      <![CDATA[Chrome is running in Headless Mode!!, you can change the setting in Config file]]>
-    </line>
-    <line>
-      <![CDATA[Log INFO: Email Generated is-------test16_51_13_01_2025@eamil.com]]>
+      <![CDATA[Log INFO: Email Generated is-------test18_26_05_01_2025@eamil.com]]>
     </line>
     <line>
       <![CDATA[Log: INFO Closing driver]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-01-28T16:50:59 GMT" name="All Test Suite" finished-at="2025-01-28T16:51:19 GMT" duration-ms="19250">
+  <suite started-at="2025-01-28T18:25:32 GMT" name="All Test Suite" finished-at="2025-01-28T18:26:36 GMT" duration-ms="64154">
     <groups>
     </groups>
-    <test started-at="2025-01-28T16:50:59 GMT" name="/Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/src/main/java/Tests/RegisterNewUserPageFieldCheck.java" finished-at="2025-01-28T16:51:19 GMT" duration-ms="19250">
+    <test started-at="2025-01-28T18:25:32 GMT" name="/Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/src/main/java/Tests/RegisterNewUserPageFieldCheck.java" finished-at="2025-01-28T18:26:36 GMT" duration-ms="64154">
       <class name="Tests.RegisterNewUserTest">
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T16:51:07 GMT" name="setDriver" finished-at="2025-01-28T16:51:11 GMT" duration-ms="3079" status="PASS">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T18:25:49 GMT" name="setDriver" finished-at="2025-01-28T18:25:53 GMT" duration-ms="3495" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Log: INFO Settingup driver]]>
             </line>
-            <line>
-              <![CDATA[Chrome is running in Headless Mode!!, you can change the setting in Config file]]>
-            </line>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="newUserPageNavigationByDifferentWays()[pri:1, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T16:51:11 GMT" name="newUserPageNavigationByDifferentWays" finished-at="2025-01-28T16:51:12 GMT" duration-ms="1663" status="PASS">
+        <test-method signature="newUserPageNavigationByDifferentWays()[pri:1, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T18:25:53 GMT" name="newUserPageNavigationByDifferentWays" finished-at="2025-01-28T18:26:01 GMT" duration-ms="8806" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newUserPageNavigationByDifferentWays -->
-        <test-method signature="registerNewUser()[pri:2, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T16:51:13 GMT" name="registerNewUser" finished-at="2025-01-28T16:51:15 GMT" duration-ms="2097" status="PASS">
+        <test-method signature="registerNewUser()[pri:2, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T18:26:02 GMT" name="registerNewUser" finished-at="2025-01-28T18:26:20 GMT" duration-ms="18146" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Log INFO: Email Generated is-------test16_51_13_01_2025@eamil.com]]>
+              <![CDATA[Log INFO: Email Generated is-------test18_26_05_01_2025@eamil.com]]>
             </line>
           </reporter-output>
         </test-method> <!-- registerNewUser -->
-        <test-method signature="verifyAccountCreatedText()[pri:3, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T16:51:15 GMT" name="verifyAccountCreatedText" finished-at="2025-01-28T16:51:15 GMT" duration-ms="45" status="PASS">
+        <test-method signature="verifyAccountCreatedText()[pri:3, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T18:26:21 GMT" name="verifyAccountCreatedText" finished-at="2025-01-28T18:26:22 GMT" duration-ms="1602" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAccountCreatedText -->
-        <test-method signature="verifyCongratulationsText()[pri:4, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T16:51:16 GMT" name="verifyCongratulationsText" finished-at="2025-01-28T16:51:16 GMT" duration-ms="35" status="PASS">
+        <test-method signature="verifyCongratulationsText()[pri:4, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T18:26:23 GMT" name="verifyCongratulationsText" finished-at="2025-01-28T18:26:24 GMT" duration-ms="1684" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCongratulationsText -->
-        <test-method signature="verifyAdvantageText()[pri:5, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T16:51:16 GMT" name="verifyAdvantageText" finished-at="2025-01-28T16:51:16 GMT" duration-ms="39" status="PASS">
+        <test-method signature="verifyAdvantageText()[pri:5, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T18:26:25 GMT" name="verifyAdvantageText" finished-at="2025-01-28T18:26:26 GMT" duration-ms="1590" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAdvantageText -->
-        <test-method signature="verifyAnyQuestionText()[pri:6, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T16:51:16 GMT" name="verifyAnyQuestionText" finished-at="2025-01-28T16:51:16 GMT" duration-ms="39" status="PASS">
+        <test-method signature="verifyAnyQuestionText()[pri:6, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T18:26:27 GMT" name="verifyAnyQuestionText" finished-at="2025-01-28T18:26:28 GMT" duration-ms="1592" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAnyQuestionText -->
-        <test-method signature="verifyConfermationHasBeenSentText()[pri:7, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T16:51:17 GMT" name="verifyConfermationHasBeenSentText" finished-at="2025-01-28T16:51:17 GMT" duration-ms="43" status="PASS">
+        <test-method signature="verifyConfermationHasBeenSentText()[pri:7, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T18:26:29 GMT" name="verifyConfermationHasBeenSentText" finished-at="2025-01-28T18:26:30 GMT" duration-ms="1598" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyConfermationHasBeenSentText -->
-        <test-method signature="checkContinueButtonDisplays()[pri:8, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T16:51:17 GMT" name="checkContinueButtonDisplays" finished-at="2025-01-28T16:51:17 GMT" duration-ms="37" status="PASS">
+        <test-method signature="checkContinueButtonDisplays()[pri:8, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T18:26:31 GMT" name="checkContinueButtonDisplays" finished-at="2025-01-28T18:26:32 GMT" duration-ms="1584" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkContinueButtonDisplays -->
-        <test-method signature="clickOnContinueButton()[pri:9, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T16:51:18 GMT" name="clickOnContinueButton" finished-at="2025-01-28T16:51:18 GMT" duration-ms="399" status="PASS">
+        <test-method signature="clickOnContinueButton()[pri:9, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T18:26:33 GMT" name="clickOnContinueButton" finished-at="2025-01-28T18:26:35 GMT" duration-ms="2473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnContinueButton -->
-        <test-method is-config="true" signature="driverTearDown()[pri:0, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T16:51:18 GMT" name="driverTearDown" finished-at="2025-01-28T16:51:19 GMT" duration-ms="176" status="PASS">
+        <test-method is-config="true" signature="driverTearDown()[pri:0, instance:Tests.RegisterNewUserTest@1807e3f6]" started-at="2025-01-28T18:26:36 GMT" name="driverTearDown" finished-at="2025-01-28T18:26:36 GMT" duration-ms="312" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Log: INFO Closing driver]]>
@@ -86,25 +77,22 @@
         </test-method> <!-- driverTearDown -->
       </class> <!-- Tests.RegisterNewUserTest -->
       <class name="Tests.LoginTest">
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:Tests.LoginTest@15a34df2]" started-at="2025-01-28T16:50:59 GMT" name="setDriver" finished-at="2025-01-28T16:51:04 GMT" duration-ms="5004" status="PASS">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:Tests.LoginTest@15a34df2]" started-at="2025-01-28T18:25:32 GMT" name="setDriver" finished-at="2025-01-28T18:25:37 GMT" duration-ms="5187" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Log: INFO Settingup driver]]>
             </line>
-            <line>
-              <![CDATA[Chrome is running in Headless Mode!!, you can change the setting in Config file]]>
-            </line>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="navigateToLogin()[pri:0, instance:Tests.LoginTest@15a34df2]" started-at="2025-01-28T16:51:04 GMT" name="navigateToLogin" finished-at="2025-01-28T16:51:05 GMT" duration-ms="673" status="PASS">
+        <test-method signature="navigateToLogin()[pri:0, instance:Tests.LoginTest@15a34df2]" started-at="2025-01-28T18:25:37 GMT" name="navigateToLogin" finished-at="2025-01-28T18:25:41 GMT" duration-ms="3993" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToLogin -->
-        <test-method signature="ValidLoginToApp()[pri:1, instance:Tests.LoginTest@15a34df2]" started-at="2025-01-28T16:51:06 GMT" name="ValidLoginToApp" finished-at="2025-01-28T16:51:07 GMT" duration-ms="1346" status="PASS">
+        <test-method signature="ValidLoginToApp()[pri:1, instance:Tests.LoginTest@15a34df2]" started-at="2025-01-28T18:25:42 GMT" name="ValidLoginToApp" finished-at="2025-01-28T18:25:48 GMT" duration-ms="6251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidLoginToApp -->
-        <test-method is-config="true" signature="driverTearDown()[pri:0, instance:Tests.LoginTest@15a34df2]" started-at="2025-01-28T16:51:07 GMT" name="driverTearDown" finished-at="2025-01-28T16:51:07 GMT" duration-ms="184" status="PASS">
+        <test-method is-config="true" signature="driverTearDown()[pri:0, instance:Tests.LoginTest@15a34df2]" started-at="2025-01-28T18:25:49 GMT" name="driverTearDown" finished-at="2025-01-28T18:25:49 GMT" duration-ms="457" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Log: INFO Closing driver]]>
