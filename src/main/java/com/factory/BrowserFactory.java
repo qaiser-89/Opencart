@@ -32,8 +32,8 @@ public class BrowserFactory
                 options.addArguments("--headless=new");
                 Reporter.log("Chrome is running in Headless Mode!!, you can change the setting in Config file", true);
             }
+            driver =new ChromeDriver(options);
 
-            driver =new ChromeDriver();
         } else if (driverName.equalsIgnoreCase("Firefox")|| driverName.equalsIgnoreCase("Mozila Firefox")) {
             driver = new FirefoxDriver();
         } else if (driverName.equalsIgnoreCase("safari") || driverName.equalsIgnoreCase("Apple Safari"))
