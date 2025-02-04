@@ -25,7 +25,6 @@ public class RegisterNewUserTest extends BaseClass
         home.navidateToNewUserPage();
         login.accessRegisterFromDifferentWays();
 
-
     }
 
     //@Test(priority = 1)
@@ -44,48 +43,60 @@ public class RegisterNewUserTest extends BaseClass
         Assert.assertEquals("Your Account Has Been Created!", expected_message);
         Assert.assertTrue(register.verifySuccessMessShows());
     }
+
     @Test(priority = 3)
+    public void registerNewUserWithNoNewletter()
+    {
+        RegisterPage register=new RegisterPage(driver);
+        register.registerNewUserWithNoNewsletter();
+        String expected_message = "Your Account Has Been Created!";
+        Assert.assertEquals("Your Account Has Been Created!", expected_message);
+        Assert.assertTrue(register.verifySuccessMessShows());
+    }
+
+
+    @Test(priority = 4)
     public void verifyAccountCreatedText()
     {
         SuccessfullPage succ=new SuccessfullPage(driver);
         Assert.assertEquals(succ.verifyTextOnSuccessfullPage(), String1);
     }
 
-    @Test(priority = 4)
+    @Test(priority = 5)
     public void verifyCongratulationsText()
     {
         SuccessfullPage succ=new SuccessfullPage(driver);
         Assert.assertEquals(succ.verifySuccessMessLine2(), String2);
     }
 
-    @Test(priority = 5)
+    @Test(priority = 6)
     public void verifyAdvantageText()
     {
         SuccessfullPage succ=new SuccessfullPage(driver);
         Assert.assertEquals(succ.verifySuccessMessLine3(), String3);
     }
 
-    @Test(priority = 6)
+    @Test(priority = 7)
     public void verifyAnyQuestionText()
     {
         SuccessfullPage succ=new SuccessfullPage(driver);
         Assert.assertEquals(succ.verifySuccessMessLine4(), String4);
     }
 
-    @Test(priority = 7)
+    @Test(priority = 8)
     public void verifyConfermationHasBeenSentText()
     {
         SuccessfullPage succ=new SuccessfullPage(driver);
         Assert.assertEquals(succ.verifySuccessMessLine5(), String5);
     }
-    @Test(priority = 8)
+    @Test(priority = 9)
     public void checkContinueButtonDisplays()
     {
         SuccessfullPage succ=new SuccessfullPage(driver);
         Assert.assertTrue(succ.verfiyContinueButtonDisplays());
     }
 
-    @Test(priority = 9)
+    @Test(priority = 10)
     public void clickOnContinueButton()
     {
         SuccessfullPage succ=new SuccessfullPage(driver);
