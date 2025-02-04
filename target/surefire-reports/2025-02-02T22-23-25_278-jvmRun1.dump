@@ -1,4 +1,4 @@
-# Created at 2025-01-29T15:22:25.791
+# Created at 2025-02-02T22:23:25.677
 org.apache.maven.surefire.api.testset.TestSetFailedException: Suite file /Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/XMLFiles/${xmlTest} is not a valid file
 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.locateTestSets(TestNGXmlTestSuite.java:89)
 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:112)
