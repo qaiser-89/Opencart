@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.listener.MyListener"/>
+  </listeners>
+  <test thread-count="5" name="/Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/src/main/java/Tests/RegisterNewUserPageFieldCheck.java(failed)" verbose="0">
+    <classes>
+      <class name="Tests.RegisterNewUserTest">
+        <methods>
+          <include name="setDriver"/>
+          <include name="registerNewUserWithNoNewletter"/>
+          <include name="driverTearDown"/>
+        </methods>
+      </class> <!-- Tests.RegisterNewUserTest -->
+    </classes>
+  </test> <!-- /Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/src/main/java/Tests/RegisterNewUserPageFieldCheck.java(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
