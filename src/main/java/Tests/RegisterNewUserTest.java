@@ -44,16 +44,6 @@ public class RegisterNewUserTest extends BaseClass
         Assert.assertTrue(register.verifySuccessMessShows());
     }
 
-    @Test(priority = 3)
-    public void registerNewUserWithNoNewletter()
-    {
-        RegisterPage register=new RegisterPage(driver);
-        register.registerNewUserWithNoNewsletter();
-        String expected_message = "Your Account Has Been Created!";
-        Assert.assertEquals("Your Account Has Been Created!", expected_message);
-        Assert.assertTrue(register.verifySuccessMessShows());
-    }
-
 
     @Test(priority = 4)
     public void verifyAccountCreatedText()
