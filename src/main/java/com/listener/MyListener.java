@@ -30,7 +30,7 @@ public class MyListener implements ITestListener
 
     public void onTestFailure(ITestResult result)
     {
-        if(DataReader.readProperty("ScreenshotOnSuccess").equalsIgnoreCase("True"))
+        if(DataReader.readProperty("ScreenshotOnFailure").equalsIgnoreCase("True"))
         {
             String screenshotString=Utility.captureScreenshotAsByte(BrowserFactory.getDriver());
             extentTest.fail("Test failed"+result.getThrowable().getMessage(),MediaEntityBuilder.createScreenCaptureFromBase64String(screenshotString).build());
@@ -48,7 +48,7 @@ public class MyListener implements ITestListener
 
     public void onTestSkipped(ITestResult result)
     {
-        if(DataReader.readProperty("ScreenshotOnSuccess").equalsIgnoreCase("True"))
+        if(DataReader.readProperty("ScreenshotOnSkip").equalsIgnoreCase("True"))
         {
             String screenshotString= Utility.captureScreenshotAsByte(BrowserFactory.getDriver());
             extentTest.skip("Test Skipped"+result.getThrowable().getMessage(),MediaEntityBuilder.createScreenCaptureFromBase64String(screenshotString).build());

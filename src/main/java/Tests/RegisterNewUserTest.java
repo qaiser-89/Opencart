@@ -24,7 +24,6 @@ public class RegisterNewUserTest extends BaseClass
         LoginPage login=new LoginPage(driver);
         home.navidateToNewUserPage();
         login.accessRegisterFromDifferentWays();
-
     }
 
     //@Test(priority = 1)
@@ -92,7 +91,5 @@ public class RegisterNewUserTest extends BaseClass
         SuccessfullPage succ=new SuccessfullPage(driver);
         succ.clickContinueButton();
     }
-
-
 
 }

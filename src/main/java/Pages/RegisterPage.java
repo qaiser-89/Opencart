@@ -1,8 +1,10 @@
 package Pages;
 
+import com.dataProvider.DataReader;
 import com.helper.Utility;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.Reporter;
 
 public class RegisterPage
@@ -22,10 +24,8 @@ public class RegisterPage
     protected By accept_policy = By.xpath("//input[@name='agree']");
     protected By newletter_yes_radio = By.xpath("//label[normalize-space()='Yes']");
     protected By newletter_no_radio = By.xpath("//label[normalize-space()='No']");
-
     protected By continue_button = By.xpath("//input[@value='Continue']");
     protected By successful_registration_message = By.xpath("//p[contains(text(),'Congratulations! Your new account has been success')]");
-
     protected By warning_message_privacy_policy = By.xpath("//div[@class='alert alert-danger alert-dismissible']");
     protected By first_name_error_message = By.xpath("//div[contains(text(),'First Name must be')]");
     protected By last_name_error_message = By.xpath("//div[contains(text(),'Last Name must be')]");
@@ -33,25 +33,33 @@ public class RegisterPage
     protected By telephone_error_message = By.xpath("//div[contains(text(),'Telephone must be')]");
     protected By password_error_message = By.xpath("//div[contains(text(),'Password must be between')]");
 
+
 public void registerNewUser()
 {
     Utility.waitForElement(driver, first_name).sendKeys("Test");
     Utility.waitForElement(driver, last_name).sendKeys("Automation");
-    String emailGenerated="test"+Utility.currentDate()+"@eamil.com";
+    String emailGenerated = "test" + Utility.currentDate() + "@eamil.com";
     Utility.waitForElement(driver, email).sendKeys(emailGenerated);
-    Reporter.log("Log INFO: Email Generated is-------"+emailGenerated, true);
+    Reporter.log("Log INFO: Email Generated is-------" + emailGenerated, true);
     //Utility.waitForElement(driver, email).sendKeys("test"+Utility.currentDate()+"@gmail.com");
     Utility.waitForElement(driver, telephone).sendKeys("079797978098");
     Utility.waitForElement(driver, password).sendKeys("Test@123");
     Utility.waitForElement(driver, confirm_password).sendKeys("Test@123");
     Utility.waitForElement(driver, accept_policy).click();
-    Utility.waitForElement(driver, newletter_yes_radio).click();
-    Utility.waitForElement(driver, continue_button).click();
-}
 
-public void ceckNoNewsLetterOption()
-{
-    Utility.waitForElement(driver, newletter_no_radio).isSelected();
+    if(DataReader.readProperty("NewletterOption").equalsIgnoreCase("True")) {
+        Utility.waitForElement(driver, newletter_yes_radio).click();
+        Utility.waitForElement(driver, continue_button).click();
+    }
+    else
+    {
+        Utility.waitForElement(driver, continue_button).click();
+       /* NewletterPage newsl=new NewletterPage(driver);
+       newsl.navigeToNewsLetterPage();
+       Assert.assertFalse(newsl.chcekNoNewletter());*/
+    }
+
+
 }
 
 
@@ -95,5 +103,7 @@ public String verifyPassError()
     String passerror=Utility.waitForElement(driver, password_error_message).getText();
     return passerror;
 }
+
+
 
 }
