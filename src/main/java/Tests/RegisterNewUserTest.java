@@ -43,7 +43,7 @@ public class RegisterNewUserTest extends BaseClass
         String expected_message = "Your Account Has Been Created!";
         Assert.assertEquals("Your Account Has Been Created!", expected_message);
         Assert.assertTrue(register.verifySuccessMessShows());
-        if(DataReader.readProperty("NewletterOption").equalsIgnoreCase("True"))
+        if(DataReader.readProperty("NewletterNoOption").equalsIgnoreCase("True"))
         {
             Reporter.log("Created the user with NewsLetter option set to Yes, If needed as No Please change in the Config File  ");
     }

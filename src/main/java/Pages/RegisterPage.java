@@ -49,7 +49,7 @@ public void registerNewUser()
     Utility.waitForElement(driver, confirm_password).sendKeys("Test@123");
     Utility.waitForElement(driver, accept_policy).click();
 
-    if(DataReader.readProperty("NewletterOption").equalsIgnoreCase("True")) {
+    if(DataReader.readProperty("NewletterNoOption").equalsIgnoreCase("True")) {
         Utility.waitForElement(driver, newletter_yes_radio).click();
         Utility.waitForElement(driver, continue_button).click();
     }
