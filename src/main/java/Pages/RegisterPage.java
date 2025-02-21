@@ -25,6 +25,8 @@ public class RegisterPage
     protected By newletter_yes_radio = By.xpath("//label[normalize-space()='Yes']");
     protected By newletter_no_radio = By.xpath("//label[normalize-space()='No']");
     protected By continue_button = By.xpath("//input[@value='Continue']");
+
+
     protected By successful_registration_message = By.xpath("//p[contains(text(),'Congratulations! Your new account has been success')]");
     protected By warning_message_privacy_policy = By.xpath("//div[@class='alert alert-danger alert-dismissible']");
     protected By first_name_error_message = By.xpath("//div[contains(text(),'First Name must be')]");
@@ -54,12 +56,7 @@ public void registerNewUser()
     else
     {
         Utility.waitForElement(driver, continue_button).click();
-       /* NewletterPage newsl=new NewletterPage(driver);
-       newsl.navigeToNewsLetterPage();
-       Assert.assertFalse(newsl.chcekNoNewletter());*/
     }
-
-
 }
 
 
