@@ -16,6 +16,7 @@ public class RegisterNewUserPageFieldCheck  extends BaseClass
     String email_errorText= "E-Mail Address does not appear to be valid!";
     String telephone_errorText= "Telephone must be between 3 and 32 characters!";
     String password_errorText = "Password must be between 4 and 20 characters!";
+    String password_no_matchText = "Password confirmation does not match password!";
 
     @Test(priority = 1)
     public void navigateToNewUserPage()
@@ -70,5 +71,14 @@ public class RegisterNewUserPageFieldCheck  extends BaseClass
         RegisterPage registerP=new RegisterPage(driver);
         String acturl= registerP.verifyPassError();
         Assert.assertEquals(acturl, password_errorText);
+    }
+    
+    @Test(priority = 8)
+    public void passwordMatchErrorVerification()
+    {
+    	RegisterPage registerP=new RegisterPage(driver);
+    	registerP.registerNewUserWithOutPasswordMatch();
+    	Assert.assertEquals(password_no_matchText, "Password confirmation does not match password!");
+    	
     }
 }

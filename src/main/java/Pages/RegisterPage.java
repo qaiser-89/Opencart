@@ -101,6 +101,19 @@ public String verifyPassError()
     return passerror;
 }
 
+public void registerNewUserWithOutPasswordMatch()
+{
+	Utility.waitForElement(driver, first_name).sendKeys("Test");
+    Utility.waitForElement(driver, last_name).sendKeys("Automation");
+    String emailGenerated = "test" + Utility.currentDate() + "@eamil.com";
+    Utility.waitForElement(driver, email).sendKeys(emailGenerated);
+    Reporter.log("Log INFO: Email Generated is-------" + emailGenerated, true);
+    //Utility.waitForElement(driver, email).sendKeys("test"+Utility.currentDate()+"@gmail.com");
+    Utility.waitForElement(driver, telephone).sendKeys("079797978098");
+    Utility.waitForElement(driver, password).sendKeys("Test@123");
+    Utility.waitForElement(driver, confirm_password).sendKeys("Test@1234");
+    Utility.waitForElement(driver, accept_policy).click();
+}
 
 
 }

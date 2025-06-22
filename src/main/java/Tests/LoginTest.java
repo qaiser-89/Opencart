@@ -20,9 +20,12 @@ public class  LoginTest extends BaseClass
     public void ValidLoginToApp()
     {
         LoginPage login=new LoginPage(driver);
-
         login.ValidLoginWithCorrectDetails(DataReader.readProperty("Username"),DataReader.readProperty("Password"));
-
     }
-
+   // @Test
+    public void logOutOfApp()
+    {
+        HomePage home=new HomePage(driver);
+        home.logoutOfApplication();
+    }
 }

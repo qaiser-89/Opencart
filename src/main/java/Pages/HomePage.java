@@ -18,6 +18,8 @@ public class HomePage
         protected By register_acc = By.xpath("//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Register']");
         protected By login = By.xpath("//a[normalize-space()='Login']");
 
+        protected By log_out_button = By.xpath("//a[text()='Logout']");
+
         protected By login_button = By.xpath("//button[@type='submit']");
 
         public void navigateToLoginPage()
@@ -32,6 +34,12 @@ public class HomePage
             Utility.waitForElement(driver, register_acc).click();
             RegisterPage register=new RegisterPage(driver);
             return register;
+        }
+
+        public void logoutOfApplication()
+        {
+            Utility.waitForElement(driver, my_account).click();
+            Utility.waitForElement(driver, log_out_button).click();
         }
     }
 
