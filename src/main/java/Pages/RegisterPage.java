@@ -25,8 +25,6 @@ public class RegisterPage
     protected By newletter_yes_radio = By.xpath("//label[normalize-space()='Yes']");
     protected By newletter_no_radio = By.xpath("//label[normalize-space()='No']");
     protected By continue_button = By.xpath("//input[@value='Continue']");
-
-
     protected By successful_registration_message = By.xpath("//p[contains(text(),'Congratulations! Your new account has been success')]");
     protected By warning_message_privacy_policy = By.xpath("//div[@class='alert alert-danger alert-dismissible']");
     protected By first_name_error_message = By.xpath("//div[contains(text(),'First Name must be')]");
@@ -108,7 +106,6 @@ public void registerNewUserWithOutPasswordMatch()
     String emailGenerated = "test" + Utility.currentDate() + "@eamil.com";
     Utility.waitForElement(driver, email).sendKeys(emailGenerated);
     Reporter.log("Log INFO: Email Generated is-------" + emailGenerated, true);
-    //Utility.waitForElement(driver, email).sendKeys("test"+Utility.currentDate()+"@gmail.com");
     Utility.waitForElement(driver, telephone).sendKeys("079797978098");
     Utility.waitForElement(driver, password).sendKeys("Test@123");
     Utility.waitForElement(driver, confirm_password).sendKeys("Test@1234");
