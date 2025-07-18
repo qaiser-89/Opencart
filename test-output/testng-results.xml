@@ -1,64 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Log: INFO Settingup driver]]>
     </line>
     <line>
-      <![CDATA[Log INFO: Email Generated is-------test09_56_04_06_2025@eamil.com]]>
+      <![CDATA[Log INFO: Email Generated is-------test00_02_47_07_2025@eamil.com]]>
     </line>
     <line>
       <![CDATA[Log: INFO Closing driver]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-06-26T09:55:57 BST" name="Default suite" finished-at="2025-06-26T09:56:04 BST" duration-ms="6895">
+  <suite started-at="2025-07-07T00:02:30 BST" name="Default suite" finished-at="2025-07-07T00:03:11 BST" duration-ms="41891">
     <groups>
     </groups>
-    <test started-at="2025-06-26T09:55:57 BST" name="Default test" finished-at="2025-06-26T09:56:04 BST" duration-ms="6895">
+    <test started-at="2025-07-07T00:02:30 BST" name="Default test" finished-at="2025-07-07T00:03:11 BST" duration-ms="41891">
       <class name="Tests.RegisterNewUserPageFieldCheck">
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:Tests.RegisterNewUserPageFieldCheck@7eac9008]" started-at="2025-06-26T09:55:58 BST" name="setDriver" finished-at="2025-06-26T09:56:02 BST" duration-ms="4433" status="PASS">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:Tests.RegisterNewUserPageFieldCheck@4c178a76]" started-at="2025-07-07T00:02:30 BST" name="setDriver" finished-at="2025-07-07T00:02:34 BST" duration-ms="4311" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Log: INFO Settingup driver]]>
             </line>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="navigateToNewUserPage()[pri:1, instance:Tests.RegisterNewUserPageFieldCheck@7eac9008]" started-at="2025-06-26T09:56:02 BST" name="navigateToNewUserPage" finished-at="2025-06-26T09:56:03 BST" duration-ms="1275" status="PASS">
+        <test-method signature="navigateToNewUserPage()[pri:1, instance:Tests.RegisterNewUserPageFieldCheck@4c178a76]" started-at="2025-07-07T00:02:34 BST" name="navigateToNewUserPage" finished-at="2025-07-07T00:02:38 BST" duration-ms="3944" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToNewUserPage -->
-        <test-method signature="verifyWarningError()[pri:2, instance:Tests.RegisterNewUserPageFieldCheck@7eac9008]" started-at="2025-06-26T09:56:03 BST" name="verifyWarningError" finished-at="2025-06-26T09:56:03 BST" duration-ms="63" status="PASS">
+        <test-method signature="verifyWarningError()[pri:2, instance:Tests.RegisterNewUserPageFieldCheck@4c178a76]" started-at="2025-07-07T00:02:38 BST" name="verifyWarningError" finished-at="2025-07-07T00:02:39 BST" duration-ms="1079" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWarningError -->
-        <test-method signature="verifyFNameError()[pri:3, instance:Tests.RegisterNewUserPageFieldCheck@7eac9008]" started-at="2025-06-26T09:56:03 BST" name="verifyFNameError" finished-at="2025-06-26T09:56:03 BST" duration-ms="43" status="PASS">
+        <test-method signature="verifyFNameError()[pri:3, instance:Tests.RegisterNewUserPageFieldCheck@4c178a76]" started-at="2025-07-07T00:02:39 BST" name="verifyFNameError" finished-at="2025-07-07T00:02:40 BST" duration-ms="1060" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFNameError -->
-        <test-method signature="verifyLNameError()[pri:4, instance:Tests.RegisterNewUserPageFieldCheck@7eac9008]" started-at="2025-06-26T09:56:03 BST" name="verifyLNameError" finished-at="2025-06-26T09:56:03 BST" duration-ms="40" status="PASS">
+        <test-method signature="verifyLNameError()[pri:4, instance:Tests.RegisterNewUserPageFieldCheck@4c178a76]" started-at="2025-07-07T00:02:40 BST" name="verifyLNameError" finished-at="2025-07-07T00:02:41 BST" duration-ms="1064" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLNameError -->
-        <test-method signature="verifyEmailError()[pri:5, instance:Tests.RegisterNewUserPageFieldCheck@7eac9008]" started-at="2025-06-26T09:56:03 BST" name="verifyEmailError" finished-at="2025-06-26T09:56:03 BST" duration-ms="36" status="PASS">
+        <test-method signature="verifyEmailError()[pri:5, instance:Tests.RegisterNewUserPageFieldCheck@4c178a76]" started-at="2025-07-07T00:02:41 BST" name="verifyEmailError" finished-at="2025-07-07T00:02:42 BST" duration-ms="1063" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmailError -->
-        <test-method signature="verifyTelephoneError()[pri:6, instance:Tests.RegisterNewUserPageFieldCheck@7eac9008]" started-at="2025-06-26T09:56:03 BST" name="verifyTelephoneError" finished-at="2025-06-26T09:56:03 BST" duration-ms="36" status="PASS">
+        <test-method signature="verifyTelephoneError()[pri:6, instance:Tests.RegisterNewUserPageFieldCheck@4c178a76]" started-at="2025-07-07T00:02:42 BST" name="verifyTelephoneError" finished-at="2025-07-07T00:02:43 BST" duration-ms="1059" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTelephoneError -->
-        <test-method signature="verifyPasswordError()[pri:7, instance:Tests.RegisterNewUserPageFieldCheck@7eac9008]" started-at="2025-06-26T09:56:03 BST" name="verifyPasswordError" finished-at="2025-06-26T09:56:03 BST" duration-ms="39" status="PASS">
+        <test-method signature="verifyPasswordError()[pri:7, instance:Tests.RegisterNewUserPageFieldCheck@4c178a76]" started-at="2025-07-07T00:02:43 BST" name="verifyPasswordError" finished-at="2025-07-07T00:02:44 BST" duration-ms="1058" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPasswordError -->
-        <test-method signature="passwordMatchErrorVerification()[pri:8, instance:Tests.RegisterNewUserPageFieldCheck@7eac9008]" started-at="2025-06-26T09:56:03 BST" name="passwordMatchErrorVerification" finished-at="2025-06-26T09:56:04 BST" duration-ms="699" status="PASS">
+        <test-method signature="passwordMatchErrorVerification()[pri:8, instance:Tests.RegisterNewUserPageFieldCheck@4c178a76]" started-at="2025-07-07T00:02:44 BST" name="passwordMatchErrorVerification" finished-at="2025-07-07T00:02:52 BST" duration-ms="7764" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Log INFO: Email Generated is-------test09_56_04_06_2025@eamil.com]]>
+              <![CDATA[Log INFO: Email Generated is-------test00_02_47_07_2025@eamil.com]]>
             </line>
           </reporter-output>
         </test-method> <!-- passwordMatchErrorVerification -->
-        <test-method is-config="true" signature="driverTearDown()[pri:0, instance:Tests.RegisterNewUserPageFieldCheck@7eac9008]" started-at="2025-06-26T09:56:04 BST" name="driverTearDown" finished-at="2025-06-26T09:56:04 BST" duration-ms="182" status="PASS">
+        <test-method signature="verifyEmailAlreadyExistMessage()[pri:9, instance:Tests.RegisterNewUserPageFieldCheck@4c178a76]" started-at="2025-07-07T00:02:52 BST" name="verifyEmailAlreadyExistMessage" finished-at="2025-07-07T00:03:02 BST" duration-ms="9594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailAlreadyExistMessage -->
+        <test-method signature="verifyHalfEmail2()[pri:11, instance:Tests.RegisterNewUserPageFieldCheck@4c178a76]" started-at="2025-07-07T00:03:02 BST" name="verifyHalfEmail2" finished-at="2025-07-07T00:03:11 BST" duration-ms="9665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHalfEmail2 -->
+        <test-method is-config="true" signature="driverTearDown()[pri:0, instance:Tests.RegisterNewUserPageFieldCheck@4c178a76]" started-at="2025-07-07T00:03:11 BST" name="driverTearDown" finished-at="2025-07-07T00:03:11 BST" duration-ms="165" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Log: INFO Closing driver]]>

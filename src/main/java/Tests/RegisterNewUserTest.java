@@ -16,7 +16,9 @@ public class RegisterNewUserTest extends BaseClass
     String String4="If you have ANY questions about the operation of this online shop, please e-mail the store owner.";
     String String5="A confirmation has been sent to the provided e-mail address. If you have not received it within the hour, please contact us.";
     String expected_newletterSubMessage = "Success: Your newsletter subscription has been successfully updated!";
-
+    String String6 = "Warning: E-Mail Address is already registered!";
+   
+    
     @Test(priority = 1)
     public void newUserPageNavigationByDifferentWays()
     {
@@ -106,5 +108,16 @@ public class RegisterNewUserTest extends BaseClass
         SuccessfullPage succ=new SuccessfullPage(driver);
         succ.clickContinueButton();
     }
+    
+    @Test(priority = 11)
+    public void registerUserWithWrongPhoneNumber()
+    {
+    	String expectedEWarningMess  = "Telephone number does not appear to be valid"; 
+    	RegisterPage register=new RegisterPage(driver);
+       String actualString  = register.registerNewUserWithWrongPhoneNumber();
+        Assert.assertEquals(expectedEWarningMess, actualString);
+    	
+    }
+    
 
 }

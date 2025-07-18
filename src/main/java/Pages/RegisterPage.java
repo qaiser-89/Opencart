@@ -2,9 +2,14 @@ package Pages;
 
 import com.dataProvider.DataReader;
 import com.helper.Utility;
+
+import java.io.File;
+import java.io.IOException;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
+import org.openqa.selenium.io.FileHandler;
 import org.testng.Reporter;
 
 public class RegisterPage
@@ -32,7 +37,9 @@ public class RegisterPage
     protected By email_error_message = By.xpath("//div[contains(text(),'E-Mail Address does not ')]");
     protected By telephone_error_message = By.xpath("//div[contains(text(),'Telephone must be')]");
     protected By password_error_message = By.xpath("//div[contains(text(),'Password must be between')]");
-
+    protected By form_screenshot = By.xpath("form-horizontal");
+    protected By email_error = By.xpath("//div[contains(text(),'E-Mail Address does not appear to be valid!')]");
+    protected By wrong_telephone_mess = By.xpath("//input[@id='input-telephone']/following-sibling::div");
 
 public void registerNewUser()
 {
@@ -112,5 +119,68 @@ public void registerNewUserWithOutPasswordMatch()
     Utility.waitForElement(driver, accept_policy).click();
 }
 
+
+public void registerNewUserWithExistingEmail()
+{
+	driver.navigate().refresh();
+    Utility.waitForElement(driver, last_name).sendKeys("Automation");
+	Utility.waitForElement(driver, first_name).sendKeys("Test");
+    Utility.waitForElement(driver, last_name).sendKeys("Automation");
+    Utility.waitForElement(driver, email).sendKeys(DataReader.readProperty("Username"));
+    Utility.waitForElement(driver, telephone).sendKeys("079797978098");
+    Utility.waitForElement(driver, password).sendKeys("Test@123");
+    Utility.waitForElement(driver, confirm_password).sendKeys("Test@1234");
+    Utility.waitForElement(driver, accept_policy).click();
+}
+public void verifyEmailFieldErrors()//In this testcase we will take screenshot of our form and compare it with actual pixel by pixel!
+{
+	driver.navigate().refresh();
+	Utility.waitForElement(driver, first_name).sendKeys("Test");
+    Utility.waitForElement(driver, last_name).sendKeys("Automation");
+    String emailGenerated = "test" + Utility.currentDate();
+    Utility.waitForElement(driver, email).sendKeys(emailGenerated);
+    Utility.waitForElement(driver, telephone).sendKeys("079797978098");
+    Utility.waitForElement(driver, password).sendKeys("Test@123");
+    Utility.waitForElement(driver, confirm_password).sendKeys("Test@123");
+    Utility.waitForElement(driver, accept_policy).click();
+    Utility.waitForElement(driver, continue_button).click();
+    File actualScreenShotFile= Utility.waitForElement(driver, form_screenshot).getScreenshotAs(OutputType.FILE);
+    try {
+		FileHandler.copy(actualScreenShotFile, new File(System.getProperty("./screenshot/actualscreenshot.png")));
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+
+public void verifyEmailDoesNotAppearVaild()
+{
+	driver.navigate().refresh();
+	Utility.waitForElement(driver, first_name).sendKeys("Test");
+    Utility.waitForElement(driver, last_name).sendKeys("Automation");
+    String emailGenerated = "test" + Utility.currentDate();
+    Utility.waitForElement(driver, email).sendKeys(emailGenerated);
+    Utility.waitForElement(driver, telephone).sendKeys("079797978098");
+    Utility.waitForElement(driver, password).sendKeys("Test@123");
+    Utility.waitForElement(driver, confirm_password).sendKeys("Test@123");
+    Utility.waitForElement(driver, accept_policy).click();
+    Utility.waitForElement(driver, continue_button).click();
+}
+
+public String registerNewUserWithWrongPhoneNumber()
+{
+	driver.navigate().refresh();
+    Utility.waitForElement(driver, last_name).sendKeys("Automation");
+	Utility.waitForElement(driver, first_name).sendKeys("Test");
+    Utility.waitForElement(driver, last_name).sendKeys("Automation");
+    String emailGenerated = "test" + Utility.currentDate() + "@eamil.com";
+    Utility.waitForElement(driver, email).sendKeys(emailGenerated);
+    Utility.waitForElement(driver, email).sendKeys(emailGenerated);
+    Utility.waitForElement(driver, telephone).sendKeys("ASDTRER");
+    Utility.waitForElement(driver, password).sendKeys("Test@123");
+    Utility.waitForElement(driver, confirm_password).sendKeys("Test@1234");
+    Utility.waitForElement(driver, accept_policy).click();
+    return Utility.waitForElement(driver, wrong_telephone_mess).getText();
+}
 
 }

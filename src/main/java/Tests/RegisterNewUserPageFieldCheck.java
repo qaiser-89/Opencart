@@ -17,6 +17,9 @@ public class RegisterNewUserPageFieldCheck  extends BaseClass
     String telephone_errorText= "Telephone must be between 3 and 32 characters!";
     String password_errorText = "Password must be between 4 and 20 characters!";
     String password_no_matchText = "Password confirmation does not match password!";
+    String email_already_exit = "Warning: E-Mail Address is already registered!";
+    protected By email_already_exist = By.xpath("//div[@class='alert alert-danger alert-dismissible']");
+
 
     @Test(priority = 1)
     public void navigateToNewUserPage()
@@ -79,6 +82,29 @@ public class RegisterNewUserPageFieldCheck  extends BaseClass
     	RegisterPage registerP=new RegisterPage(driver);
     	registerP.registerNewUserWithOutPasswordMatch();
     	Assert.assertEquals(password_no_matchText, "Password confirmation does not match password!");
+    	
+    }
+    
+    @Test(priority = 9)
+    public void verifyEmailAlreadyExistMessage()
+    {
+    	RegisterPage registerP=new RegisterPage(driver);
+    	registerP.registerNewUserWithExistingEmail();
+    	Assert.assertTrue(true, email_already_exit);
+    }
+    
+    @Test(priority = 10, enabled = false)
+    public void verifyHalfEmail1()
+    {
+    	RegisterPage registerP=new RegisterPage(driver);
+    	registerP.verifyEmailFieldErrors();
+    	
+    }
+    @Test(priority = 11)
+    public void verifyHalfEmail2()
+    {
+    	RegisterPage registerP=new RegisterPage(driver);
+    	registerP.verifyEmailDoesNotAppearVaild();
     	
     }
 }

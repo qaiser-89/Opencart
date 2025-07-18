@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.LoginTest">
+      <class name="Tests.RegisterNewUserPageFieldCheck">
         <methods>
-          <include name="logOutOfApp"/>
+          <include name="verifyHalfEmail1"/>
           <include name="setDriver"/>
           <include name="driverTearDown"/>
         </methods>
-      </class> <!-- Tests.LoginTest -->
+      </class> <!-- Tests.RegisterNewUserPageFieldCheck -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
