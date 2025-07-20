@@ -22,7 +22,7 @@ public class  LoginTest extends BaseClass
         LoginPage login=new LoginPage(driver);
         login.ValidLoginWithCorrectDetails(DataReader.readProperty("Username"),DataReader.readProperty("Password"));
     }
-    @Test(enabled = false)
+    @Test(priority = 2, enabled = true)
     public void logOutOfApp()
     {
         HomePage home=new HomePage(driver);
