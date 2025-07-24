@@ -107,4 +107,12 @@ public class RegisterNewUserPageFieldCheck  extends BaseClass
     	registerP.verifyEmailDoesNotAppearVaild();
     	
     }
+
+    @Test(priority = 12)
+    public void verifyAstarikWithMandatoryFields()
+    {
+        RegisterPage registerP=new RegisterPage(driver);
+        registerP.verfifyAstrikSymbolByEmailFields();
+    }
+
 }

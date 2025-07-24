@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
@@ -40,6 +41,13 @@ public class RegisterPage
     protected By form_screenshot = By.xpath("form-horizontal");
     protected By email_error = By.xpath("//div[contains(text(),'E-Mail Address does not appear to be valid!')]");
     protected By wrong_telephone_mess = By.xpath("//input[@id='input-telephone']/following-sibling::div");
+
+    protected By fnLabel = By.cssSelector("label[for='input-firstname']");
+    protected By lnLale = By.cssSelector("label[for='input-lastname']");
+    protected By email_Label = By.cssSelector("label[for='input-email']");
+    protected By telephone_Label = By.cssSelector("label[for='input-telephone']");
+    protected By password_Label = By.cssSelector("label[for='input-password']");
+    protected By confirm_password_Lable = By.cssSelector("label[for='input-confirm']");
 
 public void registerNewUser()
 {
@@ -182,5 +190,15 @@ public String registerNewUserWithWrongPhoneNumber()
     Utility.waitForElement(driver, accept_policy).click();
     return Utility.waitForElement(driver, wrong_telephone_mess).getText();
 }
+
+    public void verfifyAstrikSymbolByEmailFields()
+    {
+        Utility.waitForElement(driver,fnLabel);
+        JavascriptExecutor jse=(JavascriptExecutor)driver;
+        String fnContent = (String)jse.executeScript("return window.getComputedStype(arguments[0], '::before').getPropertyValue('content');", fnLabel);
+        String fnColor = (String)jse.executeScript("return window.getComputedStype(arguments[0], '::before').getPropertyValue('color');", fnLabel);
+        System.out.println(fnContent);
+        System.out.println(fnColor);
+    }
 
 }
