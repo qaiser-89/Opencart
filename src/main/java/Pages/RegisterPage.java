@@ -195,10 +195,10 @@ public String registerNewUserWithWrongPhoneNumber()
     {
         Utility.waitForElement(driver,fnLabel);
         JavascriptExecutor jse=(JavascriptExecutor)driver;
-        String fnContent = (String)jse.executeScript("return window.getComputedStype(arguments[0], '::before').getPropertyValue('content');", fnLabel);
-        String fnColor = (String)jse.executeScript("return window.getComputedStype(arguments[0], '::before').getPropertyValue('color');", fnLabel);
-        System.out.println(fnContent);
-        System.out.println(fnColor);
+        //String fnContent = (String)jse.executeScript("return window.getComputedStyle(arguments[0], '::before').getPropertyValue('content');", fnLabel);
+        //String fnColor = (String)jse.executeScript("return window.getComputedStyle(arguments[0], '::before').getPropertyValue('color');", fnLabel);
+        //System.out.println(fnContent);
+        //System.out.println(fnColor);
     }
 
 }

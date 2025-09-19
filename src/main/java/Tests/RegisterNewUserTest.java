@@ -118,6 +118,5 @@ public class RegisterNewUserTest extends BaseClass
         Assert.assertNotEquals(expectedEWarningMess, actualString);
     	
     }
-    
 
 }
