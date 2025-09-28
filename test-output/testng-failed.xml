@@ -3,13 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.RegisterNewUserPageFieldCheck">
+      <class name="Tests.RegisterNewUserTest">
         <methods>
-          <include name="verifyHalfEmail1"/>
+          <include name="registerNewUser"/>
+          <include name="clickOnContinueButton"/>
+          <include name="verifyAdvantageText"/>
           <include name="setDriver"/>
           <include name="driverTearDown"/>
+          <include name="verifyCongratulationsText"/>
+          <include name="newUserPageNavigationByDifferentWays"/>
+          <include name="verifyAccountCreatedText"/>
+          <include name="verifyConfermationHasBeenSentText"/>
+          <include name="checkContinueButtonDisplays"/>
+          <include name="verifyAnyQuestionText"/>
         </methods>
-      </class> <!-- Tests.RegisterNewUserPageFieldCheck -->
+      </class> <!-- Tests.RegisterNewUserTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -200,5 +200,13 @@ public String registerNewUserWithWrongPhoneNumber()
         //System.out.println(fnContent);
         //System.out.println(fnColor);
     }
+    
+    
+    public void verifyHeightAndWeidthOfFields()
+    {
+    	
+    	
+    	
+    }
 
 }
