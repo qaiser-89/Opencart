@@ -2,6 +2,7 @@ package com.helper;
 
 import com.dataProvider.DataReader;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.text.SimpleDateFormat;
@@ -69,6 +70,15 @@ public class Utility
         }
         return element;
 
+    }
+
+    public static void goBackToPriviousPage(WebDriver driver)
+    {
+        driver.navigate().back();
+    }
+    public static void performAction(WebDriver driver)
+    {
+        Actions act=new Actions(driver);
     }
 
 

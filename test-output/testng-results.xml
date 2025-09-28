@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Log: INFO Settingup driver]]>
+    </line>
+    <line>
+      <![CDATA[Log: INFO Closing driver]]>
+    </line>
+    <line>
+      <![CDATA[Log: INFO Settingup driver]]>
+    </line>
+    <line>
+      <![CDATA[Log INFO: Email Generated is-------test16_08_42_09_2025@eamil.com]]>
+    </line>
+    <line>
+      <![CDATA[Created the user with NewsLetter option set to Yes, If needed as No Please change in the Config File  ]]>
+    </line>
+    <line>
+      <![CDATA[Log: INFO Closing driver]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-09-21T16:08:22 BST" name="All Test Suite" finished-at="2025-09-21T16:08:46 BST" duration-ms="23757">
+    <groups>
+    </groups>
+    <test started-at="2025-09-21T16:08:22 BST" name="/Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/src/main/java/Tests/RegisterNewUserPageFieldCheck.java" finished-at="2025-09-21T16:08:46 BST" duration-ms="23757">
+      <class name="Tests.RegisterNewUserTest">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:Tests.RegisterNewUserTest@4149c063]" started-at="2025-09-21T16:08:33 BST" name="setDriver" finished-at="2025-09-21T16:08:39 BST" duration-ms="6061" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Log: INFO Settingup driver]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method signature="newUserPageNavigationByDifferentWays()[pri:1, instance:Tests.RegisterNewUserTest@4149c063]" started-at="2025-09-21T16:08:39 BST" name="newUserPageNavigationByDifferentWays" finished-at="2025-09-21T16:08:40 BST" duration-ms="1714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newUserPageNavigationByDifferentWays -->
+        <test-method signature="registerNewUser()[pri:2, instance:Tests.RegisterNewUserTest@4149c063]" started-at="2025-09-21T16:08:41 BST" name="registerNewUser" finished-at="2025-09-21T16:08:43 BST" duration-ms="2604" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Log INFO: Email Generated is-------test16_08_42_09_2025@eamil.com]]>
+            </line>
+            <line>
+              <![CDATA[Created the user with NewsLetter option set to Yes, If needed as No Please change in the Config File  ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- registerNewUser -->
+        <test-method signature="verifyAccountCreatedText()[pri:4, instance:Tests.RegisterNewUserTest@4149c063]" started-at="2025-09-21T16:08:44 BST" name="verifyAccountCreatedText" finished-at="2025-09-21T16:08:44 BST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccountCreatedText -->
+        <test-method signature="verifyCongratulationsText()[pri:5, instance:Tests.RegisterNewUserTest@4149c063]" started-at="2025-09-21T16:08:44 BST" name="verifyCongratulationsText" finished-at="2025-09-21T16:08:44 BST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCongratulationsText -->
+        <test-method signature="verifyAdvantageText()[pri:6, instance:Tests.RegisterNewUserTest@4149c063]" started-at="2025-09-21T16:08:44 BST" name="verifyAdvantageText" finished-at="2025-09-21T16:08:44 BST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdvantageText -->
+        <test-method signature="verifyAnyQuestionText()[pri:7, instance:Tests.RegisterNewUserTest@4149c063]" started-at="2025-09-21T16:08:44 BST" name="verifyAnyQuestionText" finished-at="2025-09-21T16:08:45 BST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAnyQuestionText -->
+        <test-method signature="verifyConfermationHasBeenSentText()[pri:8, instance:Tests.RegisterNewUserTest@4149c063]" started-at="2025-09-21T16:08:45 BST" name="verifyConfermationHasBeenSentText" finished-at="2025-09-21T16:08:45 BST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyConfermationHasBeenSentText -->
+        <test-method signature="checkContinueButtonDisplays()[pri:9, instance:Tests.RegisterNewUserTest@4149c063]" started-at="2025-09-21T16:08:45 BST" name="checkContinueButtonDisplays" finished-at="2025-09-21T16:08:45 BST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContinueButtonDisplays -->
+        <test-method signature="clickOnContinueButton()[pri:10, instance:Tests.RegisterNewUserTest@4149c063]" started-at="2025-09-21T16:08:45 BST" name="clickOnContinueButton" finished-at="2025-09-21T16:08:46 BST" duration-ms="382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnContinueButton -->
+        <test-method is-config="true" signature="driverTearDown()[pri:0, instance:Tests.RegisterNewUserTest@4149c063]" started-at="2025-09-21T16:08:46 BST" name="driverTearDown" finished-at="2025-09-21T16:08:46 BST" duration-ms="179" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Log: INFO Closing driver]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- driverTearDown -->
+      </class> <!-- Tests.RegisterNewUserTest -->
+      <class name="Tests.LoginTest">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:Tests.LoginTest@79defdc]" started-at="2025-09-21T16:08:22 BST" name="setDriver" finished-at="2025-09-21T16:08:29 BST" duration-ms="6555" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Log: INFO Settingup driver]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method signature="navigateToLogin()[pri:0, instance:Tests.LoginTest@79defdc]" started-at="2025-09-21T16:08:29 BST" name="navigateToLogin" finished-at="2025-09-21T16:08:30 BST" duration-ms="607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToLogin -->
+        <test-method signature="ValidLoginToApp()[pri:1, instance:Tests.LoginTest@79defdc]" started-at="2025-09-21T16:08:30 BST" name="ValidLoginToApp" finished-at="2025-09-21T16:08:31 BST" duration-ms="1218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLoginToApp -->
+        <test-method signature="logOutOfApp()[pri:2, instance:Tests.LoginTest@79defdc]" started-at="2025-09-21T16:08:32 BST" name="logOutOfApp" finished-at="2025-09-21T16:08:32 BST" duration-ms="717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutOfApp -->
+        <test-method is-config="true" signature="driverTearDown()[pri:0, instance:Tests.LoginTest@79defdc]" started-at="2025-09-21T16:08:33 BST" name="driverTearDown" finished-at="2025-09-21T16:08:33 BST" duration-ms="170" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Log: INFO Closing driver]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- driverTearDown -->
+      </class> <!-- Tests.LoginTest -->
+    </test> <!-- /Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/src/main/java/Tests/RegisterNewUserPageFieldCheck.java -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

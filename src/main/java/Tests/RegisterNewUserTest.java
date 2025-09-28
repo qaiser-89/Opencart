@@ -1,10 +1,10 @@
 package Tests;
-import Pages.HomePage;
-import Pages.LoginPage;
-import Pages.RegisterPage;
-import Pages.SuccessfullPage;
+import Pages.*;
 import com.Base.BaseClass;
+import com.dataProvider.DataReader;
+import com.helper.Utility;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class RegisterNewUserTest extends BaseClass
@@ -15,8 +15,10 @@ public class RegisterNewUserTest extends BaseClass
     String String3="You can now take advantage of member privileges to enhance your online shopping experience with us.";
     String String4="If you have ANY questions about the operation of this online shop, please e-mail the store owner.";
     String String5="A confirmation has been sent to the provided e-mail address. If you have not received it within the hour, please contact us.";
-
-
+    String expected_newletterSubMessage = "Success: Your newsletter subscription has been successfully updated!";
+    String String6 = "Warning: E-Mail Address is already registered!";
+   
+    
     @Test(priority = 1)
     public void newUserPageNavigationByDifferentWays()
     {
@@ -24,7 +26,6 @@ public class RegisterNewUserTest extends BaseClass
         LoginPage login=new LoginPage(driver);
         home.navidateToNewUserPage();
         login.accessRegisterFromDifferentWays();
-
     }
 
     //@Test(priority = 1)
@@ -37,21 +38,26 @@ public class RegisterNewUserTest extends BaseClass
     @Test(priority = 2)
     public void registerNewUser()
     {
+        HomePage home=new HomePage(driver);
+        home.navidateToNewUserPage();
         RegisterPage register=new RegisterPage(driver);
         register.registerNewUser();
         String expected_message = "Your Account Has Been Created!";
         Assert.assertEquals("Your Account Has Been Created!", expected_message);
         Assert.assertTrue(register.verifySuccessMessShows());
+        if(DataReader.readProperty("NewletterNoOption").equalsIgnoreCase("True"))
+        {
+            Reporter.log("Created the user with NewsLetter option set to Yes, If needed as No Please change in the Config File  ");
     }
-
-    @Test(priority = 3)
-    public void registerNewUserWithNoNewletter()
-    {
-        RegisterPage register=new RegisterPage(driver);
-        register.registerNewUserWithNoNewsletter();
-        String expected_message = "Your Account Has Been Created!";
-        Assert.assertEquals("Your Account Has Been Created!", expected_message);
-        Assert.assertTrue(register.verifySuccessMessShows());
+        else
+        {
+            NewletterPage news=new NewletterPage(driver);
+            news.navigeToNewsLetterPage();
+           String actual_mess= news.chcekNoNewletter();
+           Assert.assertEquals(actual_mess, expected_newletterSubMessage);
+            Utility.goBackToPriviousPage(driver);
+            Utility.goBackToPriviousPage(driver);
+        }
     }
 
 
@@ -102,7 +108,15 @@ public class RegisterNewUserTest extends BaseClass
         SuccessfullPage succ=new SuccessfullPage(driver);
         succ.clickContinueButton();
     }
-
-
+    
+    @Test(priority = 11, enabled = false)
+    public void registerUserWithWrongPhoneNumber()
+    {
+    	String expectedEWarningMess  = "Telephone number does not appear to be valid"; 
+    	RegisterPage register=new RegisterPage(driver);
+        String actualString  = register.registerNewUserWithWrongPhoneNumber();
+        Assert.assertNotEquals(expectedEWarningMess, actualString);
+    	
+    }
 
 }

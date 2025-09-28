@@ -16,13 +16,16 @@ public class  LoginTest extends BaseClass
         //demo@opencart.com
     }
 
-    @Test(priority = 1)
+    @Test(priority = 1, enabled = true)
     public void ValidLoginToApp()
     {
         LoginPage login=new LoginPage(driver);
-
         login.ValidLoginWithCorrectDetails(DataReader.readProperty("Username"),DataReader.readProperty("Password"));
-
     }
-
+    @Test(priority = 2, enabled = true)
+    public void logOutOfApp()
+    {
+        HomePage home=new HomePage(driver);
+        home.logoutOfApplication();
+    }
 }

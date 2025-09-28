@@ -65,14 +65,6 @@ public class BrowserFactory
 
 
 
-
-
-
-
-
-
-
-
             else if (driverName.equalsIgnoreCase("Firefox")|| driverName.equalsIgnoreCase("Mozila Firefox"))
             {
                 FirefoxOptions options=new FirefoxOptions();
@@ -80,13 +72,15 @@ public class BrowserFactory
                 capabilities.setCapability("browserName","Firefox");
                 capabilities.setCapability("browserVersion","134.0");
                 capabilities.setCapability("platformName","linux");
-                //options.merge(capabilities);
+                options.merge(capabilities);
                 try {
                     driver = new RemoteWebDriver(new URL(DataReader.readProperty("HubURL")), options);
-                } catch (MalformedURLException e) {
+                }
+                catch (MalformedURLException e)
+                {
                     throw new RuntimeException(e);
                 }
-                driver = new FirefoxDriver(options);
+                //driver = new FirefoxDriver(options);
 
             }
             else if (driverName.equalsIgnoreCase("safari") || driverName.equalsIgnoreCase("Apple Safari"))
@@ -97,13 +91,19 @@ public class BrowserFactory
             {
                 EdgeOptions options=new EdgeOptions();
                 DesiredCapabilities capabilities=new DesiredCapabilities();
-                capabilities.setCapability("browserName","Firefox");
-                capabilities.setCapability("browserVersion","134.0");
+                capabilities.setCapability("browserName","MicrosoftEdge");
+                capabilities.setCapability("browserVersion","132.0");
                 capabilities.setCapability("platformName","linux");
-                //options.merge(capabilities);
+                options.merge(capabilities);
 
+                try {
+                    driver = new RemoteWebDriver(new URL(DataReader.readProperty("HubURL")), options);
+                } catch (MalformedURLException e)
+                {
+                    Reporter.log("Could not Connect to Selenium Grid - Seems hub is not reachable "+e.getMessage());
+                }
 
-                driver =new EdgeDriver(options);
+               // driver =new EdgeDriver(options);
             }
             else
             {

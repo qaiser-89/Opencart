@@ -20,6 +20,8 @@ public class SuccessfullPage  extends BaseClass
     protected By proper_details_four = By.xpath("//p[contains(text(),'A confirmation has been sent to the provided e-mai')]");
     protected By continue_button = By.xpath("//a[text()='Continue']");
 
+    protected By subscribeUnsusbcribe_button = By.xpath("//a[normalize-space()='Subscribe / unsubscribe to newsletter']");
+
     public String verifyTextOnSuccessfullPage() {
         String message_line1 = Utility.waitForElement(driver, account_created_message).getText();
 
@@ -62,4 +64,8 @@ public class SuccessfullPage  extends BaseClass
         Utility.waitForElement(driver, continue_button).click();
     }
 
+    public void clickOnSubscribe()
+    {
+        Utility.waitForElement(driver, subscribeUnsusbcribe_button).click();
+    }
 }
