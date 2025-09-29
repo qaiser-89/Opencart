@@ -202,11 +202,65 @@ public String registerNewUserWithWrongPhoneNumber()
     }
     
     
-    public void verifyHeightAndWeidthOfFields()
+    public Boolean verifyHeightAndWeidthOfFNameField()
     {
+    	String expectedFNHeight = "34px";
+    	String expectedFNWeridth = "701.25px";
     	
-    	
-    	
+    	String fnameHeight	= Utility.waitForElement(driver, fnLabel).getCssValue("height");
+    	String fnameWidth = Utility.waitForElement(driver, fnLabel).getCssValue("width");
+    	return null;
     }
+    
+    public Boolean verifyHeightAndWeidthOfLNameField()
+    {
+    	String expectedFNHeight = "34px";
+    	String expectedFNWeridth = "701.25px";
+    	
+    	String fnameHeight	= Utility.waitForElement(driver, lnLale).getCssValue("height");
+    	String fnameWidth = Utility.waitForElement(driver, lnLale).getCssValue("width");
+    	return null;
+    } 
+    
+    public Boolean verifyHeightAndWeidthOfEmailField()
+    {
+    	String expectedFNHeight = "34px";
+    	String expectedFNWeridth = "701.25px";
+    	
+    	String fnameHeight	= Utility.waitForElement(driver, email_Label).getCssValue("height");
+    	String fnameWidth = Utility.waitForElement(driver, email_Label).getCssValue("width");
+    	return null;
+    } 
+    
+    public Boolean verifyHeightAndWeidthOfTelephoneField()
+    {
+    	String expectedFNHeight = "34px";
+    	String expectedFNWeridth = "701.25px";
+    	
+    	String fnameHeight	= Utility.waitForElement(driver, telephone_Label).getCssValue("height");
+    	String fnameWidth = Utility.waitForElement(driver, telephone_Label).getCssValue("width");
+    	return null;
+    } 
+    
+    public Boolean verifyHeightAndWeidthOfPasswordField()
+    {
+    	String expectedFNHeight = "34px";
+    	String expectedFNWeridth = "701.25px";
+    	
+    	String fnameHeight	= Utility.waitForElement(driver, password_Label).getCssValue("height");
+    	String fnameWidth = Utility.waitForElement(driver, password_Label).getCssValue("width");
+    	return null;
+    } 
+    
+    public Boolean verifyHeightAndWeidthOfConfirmPasswordField()
+    {
+    	String expectedFNHeight = "34px";
+    	String expectedFNWeridth = "701.25px";
+    	
+    	String fnameHeight	= Utility.waitForElement(driver, confirm_password_Lable).getCssValue("height");
+    	String fnameWidth = Utility.waitForElement(driver, confirm_password_Lable).getCssValue("width");
+    	return null;
+    } 
+    
 
 }
