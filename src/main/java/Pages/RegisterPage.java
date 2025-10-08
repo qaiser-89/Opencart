@@ -262,5 +262,31 @@ public String registerNewUserWithWrongPhoneNumber()
     	return null;
     } 
     
+    public void verifyRegisterAccountWithLeadingAndTrailingSpaces()
+    {
+    	Utility.waitForElement(driver, first_name).sendKeys("    Test     ");
+        Utility.waitForElement(driver, last_name).sendKeys("    Automation    ");
+        String emailGenerated = "test" + Utility.currentDate() + "@eamil.com";
+        Utility.waitForElement(driver, email).sendKeys("    "+emailGenerated+"    ");
+        Reporter.log("Log INFO: Email Generated is-------" + emailGenerated, true);
+        //Utility.waitForElement(driver, email).sendKeys("test"+Utility.currentDate()+"@gmail.com");
+        Utility.waitForElement(driver, telephone).sendKeys("    079797978098    ");
+        Utility.waitForElement(driver, password).sendKeys("    Test@123    ");
+        Utility.waitForElement(driver, confirm_password).sendKeys("    Test@123    ");
+        Utility.waitForElement(driver, accept_policy).click();
+
+        if(DataReader.readProperty("NewletterNoOption").equalsIgnoreCase("True")) {
+            Utility.waitForElement(driver, newletter_yes_radio).click();
+            Utility.waitForElement(driver, continue_button).click();
+        }
+        else
+        {
+            Utility.waitForElement(driver, continue_button).click();
+        }
+    	
+    	
+    	
+    }
+    
 
 }
