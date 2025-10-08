@@ -264,13 +264,18 @@ public String registerNewUserWithWrongPhoneNumber()
     
     public void verifyRegisterAccountWithLeadingAndTrailingSpaces()
     {
+    	String firstSpaceName = "";
     	Utility.waitForElement(driver, first_name).sendKeys("    Test     ");
+    	String lastSpaceName = "";
         Utility.waitForElement(driver, last_name).sendKeys("    Automation    ");
         String emailGenerated = "test" + Utility.currentDate() + "@eamil.com";
+        String emailSpaces = "";
         Utility.waitForElement(driver, email).sendKeys("    "+emailGenerated+"    ");
         Reporter.log("Log INFO: Email Generated is-------" + emailGenerated, true);
         //Utility.waitForElement(driver, email).sendKeys("test"+Utility.currentDate()+"@gmail.com");
+        String telephoneSpace = "";
         Utility.waitForElement(driver, telephone).sendKeys("    079797978098    ");
+        String passwordSpace = "";
         Utility.waitForElement(driver, password).sendKeys("    Test@123    ");
         Utility.waitForElement(driver, confirm_password).sendKeys("    Test@123    ");
         Utility.waitForElement(driver, accept_policy).click();
