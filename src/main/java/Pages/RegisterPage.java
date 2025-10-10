@@ -264,20 +264,20 @@ public String registerNewUserWithWrongPhoneNumber()
     
     public void verifyRegisterAccountWithLeadingAndTrailingSpaces()
     {
-    	String firstSpaceName = "";
-    	Utility.waitForElement(driver, first_name).sendKeys("    Test     ");
-    	String lastSpaceName = "";
-        Utility.waitForElement(driver, last_name).sendKeys("    Automation    ");
+    	String firstSpaceName = "    Test     ";
+    	Utility.waitForElement(driver, first_name).sendKeys(firstSpaceName);
+    	String lastSpaceName = "    Automation    ";
+        Utility.waitForElement(driver, last_name).sendKeys(lastSpaceName);
         String emailGenerated = "test" + Utility.currentDate() + "@eamil.com";
-        String emailSpaces = "";
-        Utility.waitForElement(driver, email).sendKeys("    "+emailGenerated+"    ");
-        Reporter.log("Log INFO: Email Generated is-------" + emailGenerated, true);
+        String emailSpaces = "    "+emailGenerated+"    ";
+        Utility.waitForElement(driver, email).sendKeys(emailSpaces);
+        Reporter.log("Log INFO: Email Generated is-------" + emailSpaces, true);
         //Utility.waitForElement(driver, email).sendKeys("test"+Utility.currentDate()+"@gmail.com");
-        String telephoneSpace = "";
-        Utility.waitForElement(driver, telephone).sendKeys("    079797978098    ");
-        String passwordSpace = "";
-        Utility.waitForElement(driver, password).sendKeys("    Test@123    ");
-        Utility.waitForElement(driver, confirm_password).sendKeys("    Test@123    ");
+        String telephoneSpace ="    079797978098    ";
+        Utility.waitForElement(driver, telephone).sendKeys(telephoneSpace);
+        String passwordSpace = "    Test@123    ";
+        Utility.waitForElement(driver, password).sendKeys(passwordSpace);
+        Utility.waitForElement(driver, confirm_password).sendKeys(passwordSpace);
         Utility.waitForElement(driver, accept_policy).click();
 
         if(DataReader.readProperty("NewletterNoOption").equalsIgnoreCase("True")) {
