@@ -8,7 +8,9 @@
     <classes>
       <class name="Tests.RegisterNewUserPageFieldCheck">
         <methods>
+          <include name="verifyTrailAndLeadingSpaces"/>
           <include name="setDriver"/>
+          <include name="verifyHalfEmail2"/>
           <include name="driverTearDown"/>
           <include name="verifyEmailAlreadyExistMessage"/>
         </methods>

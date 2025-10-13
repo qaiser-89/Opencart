@@ -114,5 +114,14 @@ public class RegisterNewUserPageFieldCheck  extends BaseClass
         RegisterPage registerP=new RegisterPage(driver);
         registerP.verfifyAstrikSymbolByEmailFields();
     }
+    
+    @Test(priority = 13)
+    public void verifyTrailAndLeadingSpaces()
+    {
+    	RegisterPage registerP=new RegisterPage(driver);
+    	driver.navigate().refresh();
+    	registerP.verifyRegisterAccountWithLeadingAndTrailingSpaces();
+    	
+    }
 
 }
