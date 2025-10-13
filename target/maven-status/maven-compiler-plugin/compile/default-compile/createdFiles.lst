@@ -1,6 +1,7 @@
 com/listener/MyListener.class
 Pages/NewletterPage.class
 Pages/SuccessfullPage.class
+Pages/EditAccountPage.class
 Pages/HomePage.class
 com/Base/BaseClass.class
 Tests/RegisterNewUserTest.class
