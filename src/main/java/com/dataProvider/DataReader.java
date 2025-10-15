@@ -23,7 +23,19 @@ public class DataReader
        return value;
    }
 
+   public static String readProperty(String key, String value)
+   {
+       Properties property=new Properties();
+       try {
+          property.load(new FileInputStream(new File("./Config.properties")));
+       } catch (IOException e)
+       {
+           Reporter.log("Issue with loading the config File check DataReader Class!!");
+       }
+       String value1 = property.getProperty(key);
 
+       return value1;
+   }
 
 
 }

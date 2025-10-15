@@ -4,17 +4,15 @@
   <listeners>
     <listener class-name="com.listener.MyListener"/>
   </listeners>
-  <test thread-count="5" name="/Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/src/main/java/Tests/RegisterNewUserTest.java(failed)">
+  <test thread-count="5" name="/Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/src/main/java/Tests/RegisterNewUserPageFieldCheck.java(failed)">
     <classes>
-      <class name="Tests.RegisterNewUserPageFieldCheck">
+      <class name="Tests.RegisterNewUserTest">
         <methods>
-          <include name="verifyTrailAndLeadingSpaces"/>
           <include name="setDriver"/>
-          <include name="verifyHalfEmail2"/>
           <include name="driverTearDown"/>
-          <include name="verifyEmailAlreadyExistMessage"/>
+          <include name="newUserPageNavigationByDifferentWays"/>
         </methods>
-      </class> <!-- Tests.RegisterNewUserPageFieldCheck -->
+      </class> <!-- Tests.RegisterNewUserTest -->
     </classes>
-  </test> <!-- /Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/src/main/java/Tests/RegisterNewUserTest.java(failed) -->
+  </test> <!-- /Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/src/main/java/Tests/RegisterNewUserPageFieldCheck.java(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->
