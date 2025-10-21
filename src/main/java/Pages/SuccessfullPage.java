@@ -19,9 +19,9 @@ public class SuccessfullPage  extends BaseClass
     protected By proper_details_three = By.xpath("//p[contains(text(),'If you have ANY questions about the operation of t')]");
     protected By proper_details_four = By.xpath("//p[contains(text(),'A confirmation has been sent to the provided e-mai')]");
     protected By continue_button = By.xpath("//a[text()='Continue']");
-
     protected By subscribeUnsusbcribe_button = By.xpath("//a[normalize-space()='Subscribe / unsubscribe to newsletter']");
-
+    protected By Edit_Account_button = By.linkText("Edit Account");
+    
     public String verifyTextOnSuccessfullPage() {
         String message_line1 = Utility.waitForElement(driver, account_created_message).getText();
 

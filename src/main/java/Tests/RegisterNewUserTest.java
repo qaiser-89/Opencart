@@ -1,11 +1,18 @@
 package Tests;
-import Pages.*;
+import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
 import com.Base.BaseClass;
 import com.dataProvider.DataReader;
 import com.helper.Utility;
-import org.testng.Assert;
-import org.testng.Reporter;
-import org.testng.annotations.Test;
+
+import Pages.HomePage;
+import Pages.LoginPage;
+import Pages.NewletterPage;
+import Pages.RegisterPage;
+import Pages.SuccessfullPage;
 
 public class RegisterNewUserTest extends BaseClass
 {
@@ -18,7 +25,6 @@ public class RegisterNewUserTest extends BaseClass
     String expected_newletterSubMessage = "Success: Your newsletter subscription has been successfully updated!";
     String String6 = "Warning: E-Mail Address is already registered!";
    
-    
     @Test(priority = 1)
     public void newUserPageNavigationByDifferentWays()
     {
