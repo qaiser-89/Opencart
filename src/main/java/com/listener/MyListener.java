@@ -1,4 +1,5 @@
 package com.listener;
+import com.aventstack.chaintest.plugins.ChainTestListener;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
@@ -12,20 +13,20 @@ import org.testng.ITestResult;
 
 public class MyListener implements ITestListener
 {
-    ExtentReports extentReports=ExtentManager.getInstance();
-    ExtentTest extentTest;
+    /*ExtentReports extentReports=ExtentManager.getInstance();
+    ExtentTest extentTest;*/
 
     public void onTestSuccess(ITestResult result)
     {
         if(DataReader.readProperty("ScreenshotOnSuccess").equalsIgnoreCase("True"))
         {
             String screenshotString= Utility.captureScreenshotAsByte(BrowserFactory.getDriver());
-            extentTest.pass("Test Passed", MediaEntityBuilder.createScreenCaptureFromBase64String(screenshotString).build());
+            ChainTestListener.embed(screenshotString, "image/png");
 
         }
         else
         {
-            extentTest.pass("Test Passed");
+            ChainTestListener.log("LOG: Passed - Test Passed"+result.getMethod().getMethodName());
         }}
 
     public void onTestFailure(ITestResult result)
@@ -33,12 +34,11 @@ public class MyListener implements ITestListener
         if(DataReader.readProperty("ScreenshotOnFailure").equalsIgnoreCase("True"))
         {
             String screenshotString=Utility.captureScreenshotAsByte(BrowserFactory.getDriver());
-            extentTest.fail("Test failed"+result.getThrowable().getMessage(),MediaEntityBuilder.createScreenCaptureFromBase64String(screenshotString).build());
-
+            ChainTestListener.embed(screenshotString, "image/png");
         }
         else
         {
-            extentTest.fail("Test Failed"+result.getThrowable().getMessage());
+        	ChainTestListener.log("LOG: Failed - Test Failed"+result.getMethod().getMethodName()+" "+result.getThrowable().getMessage());   
         }
 		/*WebDriver driver= BrowserFactory.getDriver();
 		String screenshotString=Utility.captureScreenshotAsByte(driver);
@@ -51,15 +51,14 @@ public class MyListener implements ITestListener
         if(DataReader.readProperty("ScreenshotOnSkip").equalsIgnoreCase("True"))
         {
             String screenshotString= Utility.captureScreenshotAsByte(BrowserFactory.getDriver());
-            extentTest.skip("Test Skipped"+result.getThrowable().getMessage(),MediaEntityBuilder.createScreenCaptureFromBase64String(screenshotString).build());
-
+            ChainTestListener.embed(screenshotString, "image/png");
         }
         else
         {
-            extentTest.skip("Test Skipped"+result.getThrowable().getMessage());
+        	ChainTestListener.log("LOG: SKIPPED - Test Skipped"+result.getMethod().getMethodName()+" "+result.getThrowable().getMessage());
         }}
 
-    public void onTestStart(ITestResult result)
+    /*public void onTestStart(ITestResult result)
     {
         extentTest=extentReports.createTest(result.getMethod().getMethodName());
     }
@@ -68,6 +67,6 @@ public class MyListener implements ITestListener
     {
         extentReports.flush();
 
-    }
+    }*/
 
 }

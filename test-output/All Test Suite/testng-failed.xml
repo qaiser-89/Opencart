@@ -3,16 +3,20 @@
 <suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.listener.MyListener"/>
+    <listener class-name="com.listener.RetryTransformer"/>
+    <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"/>
   </listeners>
-  <test thread-count="5" name="/Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/src/main/java/Tests/RegisterNewUserPageFieldCheck.java(failed)">
+  <test thread-count="5" name="/Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/src/main/java/Tests/RegisterNewUserTest.java(failed)">
     <classes>
-      <class name="Tests.RegisterNewUserTest">
+      <class name="Tests.RegisterNewUserPageFieldCheck">
         <methods>
+          <include name="verifyTrailAndLeadingSpaces"/>
+          <include name="verifyHalfEmail2"/>
           <include name="setDriver"/>
           <include name="driverTearDown"/>
-          <include name="newUserPageNavigationByDifferentWays"/>
+          <include name="verifyEmailAlreadyExistMessage"/>
         </methods>
-      </class> <!-- Tests.RegisterNewUserTest -->
+      </class> <!-- Tests.RegisterNewUserPageFieldCheck -->
     </classes>
-  </test> <!-- /Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/src/main/java/Tests/RegisterNewUserPageFieldCheck.java(failed) -->
+  </test> <!-- /Users/muhammadqaiser/Documents/Automation Stuff/IntelliJ IDEA/openCartProject/Opencart/src/main/java/Tests/RegisterNewUserTest.java(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->
