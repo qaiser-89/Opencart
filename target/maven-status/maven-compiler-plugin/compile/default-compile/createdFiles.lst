@@ -1,3 +1,4 @@
+com/listener/RetryTransformer.class
 com/listener/MyListener.class
 Pages/NewletterPage.class
 Pages/SuccessfullPage.class
@@ -12,6 +13,7 @@ Pages/ForgotPasswordPage.class
 Tests/LoginPageFieldsCheck.class
 com/listener/ExtentManager.class
 Tests/LoginTest.class
+com/listener/RetryAnalyzer.class
 Pages/LoginPage.class
 Pages/RegisterPage.class
 Pages/LogoutPage.class
